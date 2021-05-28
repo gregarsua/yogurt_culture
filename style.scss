@@ -511,6 +511,7 @@ select {
 
 .choosing_food {
   text-align: center;
+  overflow: hidden;
 
   &__title {
     font-size: 2.188rem;
@@ -569,6 +570,96 @@ select {
 
     &__plan-sched {
       display: flex;
+      margin: 0 auto;
+      max-width: 1200px;
+      padding: 4em 0 0 0;
+
+      .plan_chosen {
+        width: 40%;
+        position: relative !important;
+
+        .tl_50 {
+          position: absolute !important;
+          top: 20%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          margin: 0;
+          padding: 0;
+          display: block;
+
+          .title {
+            font-size: 2.188rem;
+            color: #0c55a0;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+          }
+
+          .desc {
+            font-size: 0.813rem;
+            color: #0c55a0;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 600;
+          }
+
+          .desc2 {
+            font-size: 0.625rem;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 400;
+            font-style: italic;
+            color: #0c55a0;
+            padding: 3em 0;
+          }
+        }
+      }
+
+      .plan_week {
+        width: 60%;
+        border-radius: 42px;
+        box-shadow: 0px 6px 6px 0px #ccc;
+        padding: 3em 0 0 0;
+
+        .title {
+          font-size: 1.875rem;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 500;
+          color: #0c55a0;
+        }
+
+        .dates {
+          padding: 3em 0 5em 0;
+        }
+
+        .date-2 {
+          display: flex;
+          align-items: center;
+          margin: 0 auto;
+
+          .day {
+            width: 30%;
+            font-size: 1.188rem;
+            font-family: "Montserrat", sans-serif;
+            font-weight: 300;
+          }
+
+          .input {
+            width: 50%;
+          }
+        }
+      }
+    }
+
+    .checkout {
+      padding: 2em 0 0 0;
+    }
+
+    .back {
+      padding: 2em 0 0 0;
+      font-size: 1.063rem;
+      font-family: "Montserrat", sans-serif;
+      color: #d2d3d5;
+      font-weight: 600;
     }
   }
 }
