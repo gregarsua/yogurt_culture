@@ -31,6 +31,7 @@ select {
   text-align: center;
   cursor: pointer !important;
 }
+
 .promo_code {
   background: #0c55a0;
   text-align: center;
@@ -496,6 +497,78 @@ select {
       font-weight: 600;
       font-family: "Montserrat", sans-serif;
       color: #0c55a0;
+    }
+  }
+}
+.options {
+  font-size: 0.8rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+//CHOOSING FOOD
+
+.choosing_food {
+  text-align: center;
+
+  &__title {
+    font-size: 2.188rem;
+    color: #0c55a0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding: 3em 0 0 0;
+  }
+
+  &__foods {
+    display: flex;
+
+    &__item {
+      width: 25%;
+    }
+
+    &__title {
+      font-size: 1.25rem;
+      color: #0c55a0;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      padding-top: 1em;
+    }
+
+    &__desc {
+      font-size: 0.75rem;
+      font-weight: 300;
+      font-family: "Montserrat", sans-serif;
+      color: #707070;
+      padding-top: 0.856em;
+    }
+  }
+
+  .sched {
+    text-align: center;
+    padding: 5em 0;
+
+    &__filter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 2%;
+        padding: 0 1em;
+      }
+
+      .filter_text {
+        font-size: 1rem;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        color: #0c55a0;
+        padding: 0 2em;
+      }
+    }
+
+    &__plan-sched {
+      display: flex;
     }
   }
 }

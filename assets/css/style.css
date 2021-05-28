@@ -578,4 +578,85 @@ select {
   font-family: "Montserrat", sans-serif;
   color: #0c55a0;
 }
+
+.options {
+  font-size: 0.8rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.choosing_food {
+  text-align: center;
+}
+
+.choosing_food__title {
+  font-size: 2.188rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 3em 0 0 0;
+}
+
+.choosing_food__foods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.choosing_food__foods__item {
+  width: 25%;
+}
+
+.choosing_food__foods__title {
+  font-size: 1.25rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding-top: 1em;
+}
+
+.choosing_food__foods__desc {
+  font-size: 0.75rem;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  color: #707070;
+  padding-top: 0.856em;
+}
+
+.choosing_food .sched {
+  text-align: center;
+  padding: 5em 0;
+}
+
+.choosing_food .sched__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.choosing_food .sched__filter img {
+  width: 2%;
+  padding: 0 1em;
+}
+
+.choosing_food .sched__filter .filter_text {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #0c55a0;
+  padding: 0 2em;
+}
+
+.choosing_food .sched__plan-sched {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
 /*# sourceMappingURL=style.css.map */
