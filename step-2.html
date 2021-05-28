@@ -45,52 +45,112 @@
         </ul>
     </div>
 
-    <div class="step_2">
-        <h2 class="step_2__title">
-            HERE’S HOW WE BEGIN.
-        </h2>
-        <p class="step_2__sel">Start your plan by choosing exactly what you want</p>
+    <!-- CHOOSING PLAN -->
+
+    <div class="choosing_plan" style="display: none;">
+        <div class="step_2">
+            <h2 class="step_2__title">
+                HERE’S HOW WE BEGIN.
+            </h2>
+            <p class="step_2__sel">Start your plan by choosing exactly what you want</p>
+        </div>
+
+        <div class="choose_plan">
+            <div class="plan_1">
+                <img src="assets/img/box.png" alt="">
+                <div class="plan_1__tl_50">
+                    <p class="plan_1__title">
+                        NANO
+                    </p>
+                    <p class="plan_1__desc">One week Trial Plan</p>
+                </div>
+            </div>
+            <div class="plan_2">
+                <img src="assets/img/box.png" alt="">
+                <div class="plan_2__tl_50">
+                    <p class="plan_2__title">
+                        MICRO
+                    </p>
+                    <p class="plan_2__desc">Three - week Meal Plan </p>
+                    <p class="plan_2__desc2">*Php 500 Savings*</p>
+                </div>
+            </div>
+            <div class="plan_3">
+                <img src="assets/img/box.png" alt="">
+                <div class="plan_3__tl_50">
+                    <p class="plan_3__title">
+                        MEGA
+                    </p>
+                    <p class="plan_3__desc">Two - Month Meal Plan</p>
+                    <p class="plan_3__desc2">*Php 1000 Savings*</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="promo">
+            <p class="promo__off">* 20% off your first 3 boxes *</p>
+        </div>
+    
+        <div class="choose_week">
+            <a href="#">
+                <button class="choose_week__btn">
+                    CHOOSE A WEEK
+                </button>
+            </a>
+        </div>  
     </div>
 
-    <div class="choose_plan">
-        <div class="plan_1">
-            <img src="assets/img/box.png" alt="">
-            <div class="plan_1__tl_50">
-                <p class="plan_1__title">
-                    NANO
-                </p>
-                <p class="plan_1__desc">One week Trial Plan</p>
+    <!-- CHOOSING WEEK -->
+    <div class="choosing_week" style="display:none;">
+        <div class="step_2">
+            <h2 class="step_2__title">
+                HERE’S HOW WE BEGIN.
+            </h2>
+            <p class="step_2__sel">Start your plan by choosing exactly what you want</p>
+        </div>
+
+        <div class="week">
+            <div class="week__plan">
+                <img src="assets/img/box.png" alt="">
+                <div class="tl_50">
+                    <p class="week__title">
+                        MEGA
+                    </p>
+                    <p class="week__desc">Two - Month Meal Plan</p>
+                    <p class="week__desc2">*Php 1000 Savings*</p>
+                </div>
+            </div>
+            <div class="week__calendar">
+                <p class="start_date">STARTING DATE</p>
+                <select id="date">
+                    <option class="option" data-thumbnail="assets/img/calendar.png">May 3, 2021</option>
+                </select>
+
+                <div class="input mt-2">
+                    <p class="section_2__col__col-2__label" for="fullname">TIME OF CONSUMPTION</p>
+                    <select id="time">
+                        <option class="option">
+                            <img src="assets/img/calendar.png" style="width: 10%;" alt="">
+                        </option>
+                    </select>
+                </div>
             </div>
         </div>
-        <div class="plan_2">
-            <img src="assets/img/box.png" alt="">
-            <div class="plan_2__tl_50">
-                <p class="plan_2__title">
-                    MICRO
-                </p>
-                <p class="plan_2__desc">Three - week Meal Plan </p>
-                <p class="plan_2__desc2">*Php 500 Savings*</p>
-            </div>
+        <div class="promo">
+            <p class="promo__off">* 20% off your first 3 boxes *</p>
         </div>
-        <div class="plan_3">
-            <img src="assets/img/box.png" alt="">
-            <div class="plan_3__tl_50">
-                <p class="plan_3__title">
-                    MEGA
-                </p>
-                <p class="plan_3__desc">Two - Month Meal Plan</p>
-                <p class="plan_3__desc2">*Php 1000 Savings*</p>
-            </div>
-        </div>
-    </div>
-    <div class="promo">
-        <p class="promo__off">* 20% off your first 3 boxes *</p>
+
+        <div class="choose_week">
+            <a href="#">
+                <button class="choose_week__btn">
+                    CHOOSE MY FOOD
+                </button>
+            </a>
+        </div>  
     </div>
 
-    <div class="choose_week">
-        <button class="choose_week__btn">
-            CHOOSE A WEEK
-        </button>
+    <div class="choosing_date" style="display: block;">
+
     </div>
     
 </body>

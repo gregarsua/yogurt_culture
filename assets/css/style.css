@@ -6,6 +6,32 @@
   margin: 2em 0;
 }
 
+input[type="text"] {
+  border-radius: 57px;
+  background: #f1f2f2;
+  border: none;
+  padding: 20px;
+  width: 50%;
+  margin: 1em 0;
+}
+
+select {
+  background: url("../img/arrow-down.svg") no-repeat 90% 50%;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -webkit-border-radius: 0px;
+  appearance: none;
+  border-radius: 57px;
+  background-color: #f1f2f2;
+  border: none;
+  padding: 20px;
+  width: 57%;
+  margin: 1em 0;
+  color: #b2b1b1;
+  text-align: center;
+  cursor: pointer !important;
+}
+
 .promo_code {
   background: #0c55a0;
   text-align: center;
@@ -179,15 +205,6 @@
   width: 100%;
 }
 
-.section_2 input[type="text"] {
-  border-radius: 57px;
-  background: #f1f2f2;
-  border: none;
-  padding: 20px;
-  width: 50%;
-  margin: 1em 0;
-}
-
 .button {
   text-align: center;
   display: block;
@@ -349,7 +366,7 @@
   display: -ms-flexbox;
   display: flex;
   margin: 0 auto;
-  width: 80%;
+  width: 75%;
   padding: 5em 0 3em 0;
 }
 
@@ -493,5 +510,72 @@
   border-radius: 57px;
   margin-top: 3em;
   text-align: center;
+}
+
+.week {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  padding: 5em 0 3em 0;
+  max-width: 1200px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.week__plan {
+  width: 50%;
+  text-align: center;
+  position: relative !important;
+}
+
+.week__plan .tl_50 {
+  position: absolute !important;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.week__title {
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.188rem;
+  font-weight: 600;
+}
+
+.week__desc {
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
+  font-weight: 600;
+  padding: 0.5em 0;
+}
+
+.week__desc2 {
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
+  font-weight: 600;
+  padding: 1em 0;
+}
+
+.week__calendar {
+  width: 50%;
+  text-align: left;
+}
+
+.week__calendar .start_date {
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: #0c55a0;
 }
 /*# sourceMappingURL=style.css.map */
