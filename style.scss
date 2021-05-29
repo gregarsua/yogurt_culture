@@ -18,6 +18,12 @@ input[type="text"] {
   width: 50%;
   margin: 1em 0;
 }
+.slick-slide img {
+  display: initial !important;
+  text-align: center;
+  justify-content: center;
+  width: 100%;
+}
 
 select {
   background: url("../img/arrow-down.svg") no-repeat 90% 50%;

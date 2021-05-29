@@ -19,6 +19,15 @@ input[type="text"] {
   margin: 1em 0;
 }
 
+.slick-slide img {
+  display: initial !important;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+}
+
 select {
   background: url("../img/arrow-down.svg") no-repeat 90% 50%;
   -moz-appearance: none;
