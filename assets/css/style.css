@@ -73,7 +73,11 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2.3125em 0;
+  padding: 1em 0;
+}
+
+.section_1__logo {
+  width: 80%;
 }
 
 .section_1__list {
@@ -1410,5 +1414,27 @@ select {
   color: #000;
   text-decoration: none;
   cursor: pointer;
+}
+
+.footer {
+  margin: 7.5625em 0 0 0;
+  background: #0c55a0;
+  text-align: center;
+  padding: 3.5em 0;
+}
+
+.footer__txt {
+  font-size: 0.75rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.footer__txt2 {
+  padding: 0.5em 0 0 0;
+  font-size: 0.938rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 /*# sourceMappingURL=style.css.map */
