@@ -1096,3 +1096,151 @@ select {
     align-items: center;
   }
 }
+
+//CHECKOUT
+.checkout {
+  text-align: center;
+
+  &__title {
+    font-size: 2.188rem;
+    color: #0c55a0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding: 3em 0 0 0;
+  }
+
+  &__desc {
+    font-size: 0.938rem;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+    color: #0c55a0;
+    padding: 1em 0;
+  }
+}
+
+.content {
+  text-align: center;
+  display: flex;
+  max-width: 1366px;
+  padding: 4em 0 0 0;
+  margin: 0 auto;
+
+  .qr_code {
+    width: 50%;
+
+    &__txt {
+      font-size: 1.688rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      color: #0c55a0;
+    }
+
+    &__acc {
+      font-size: 0.875rem;
+      font-weight: 300;
+      font-style: italic;
+      font-family: "Montserrat", sans-serif;
+      color: #0c55a0;
+      padding: 1em 0;
+    }
+  }
+
+  .qr_plan {
+    width: 50%;
+  }
+}
+
+.notice {
+  font-size: 0.938rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  padding: 5em 0;
+}
+
+.start_plan {
+  &__btn {
+    background: #0c55a0;
+    padding: 20px 40px;
+    color: #fff;
+    font-size: 1.063rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 57px;
+    margin-top: 3 em;
+    text-align: center;
+  }
+
+  .back {
+    font-size: 0.75rem;
+    color: #d2d3d5;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding: 3em 0;
+  }
+}
+
+//MODAL
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 0 auto;
+  padding: 60px 20px;
+  border: 1px solid #888;
+  width: 45%;
+  border-radius: 70px;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.188rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding-bottom: 1em;
+}
+
+.desc {
+  padding: 1em 0;
+  font-size: 0.938rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.modal_btn {
+  background: #0c55a0;
+  border-radius: 23px;
+  color: #fff;
+  padding: 15px 60px;
+  border: none;
+  margin: 4em 0 0 0;
+}
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
