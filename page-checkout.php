@@ -134,6 +134,12 @@
         <p class="footer__txt2">© YOGURT CULTURE 2021</p>
     </footer>
 
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_1aX0fAWdjCJgtNQEYzWaF");
+        })();
+    </script>
     <script>
         // Get the modal
         var modal = document.getElementById("myModal");
@@ -145,22 +151,96 @@
         var span = document.getElementsByClassName("close")[0];
 
         // When the user clicks the button, open the modal 
-        btn.onclick = function() {
+        btn.onclick = function () {
             modal.style.display = "block";
+            confirmOrder();
+        }
+
+        function confirmOrder() {
+            const serviceID = 'service_nv201jq';
+            const templateID = 'template_f8b2wye';
+            // company email on from_name
+            const from_name = 'ejessa0506@gmail.com'
+            // reply_to the user email
+            const reply_to = localStorage.getItem('email')
+
+            const plan = localStorage.getItem('plan');
+            const date = localStorage.getItem('date');
+            const time = localStorage.getItem('time');
+            const fullname = localStorage.getItem('fullname');
+            const address = localStorage.getItem('address');
+            const landmark = localStorage.getItem('landmark');
+            const email = localStorage.getItem('email');
+            const mobile = localStorage.getItem('mobile');
+            const nanoFoodSelected = [
+                localStorage.getItem('nano_monday'),
+                localStorage.getItem('nano_tuesday'),
+                localStorage.getItem('nano_wednesday'),
+                localStorage.getItem('nano_thursday'),
+                localStorage.getItem('nano_friday'),
+                localStorage.getItem('nano_saturday'),
+            ];
+            const myHtml = `
+            <div id="sum_nano" hidden>
+                <h1>Check Details:</h1>
+                Plan: <h2 >${plan}</h2>
+                date: <h2 >${date}</h2>
+                time: <h2>${time}</h2>
+                total: <h2>Php 1,000</h2>
+                <label>Week 1</label>
+                <h2>${nanoFoodSelected[0]}</h2>
+                <h2>${nanoFoodSelected[1]}</h2>
+                <h2>${nanoFoodSelected[2]}</h2>
+                <h2>${nanoFoodSelected[3]}</h2>
+                <h2>${nanoFoodSelected[4]}</h2>
+                <h2>${nanoFoodSelected[5]}</h2>
+            </div>
+            `;
+
+            var templateParams = {
+                to_name: email,
+                full_name: fullname,
+                address: address,
+                email: email,
+                myHtml: myHtml,
+                landmark: landmark,
+                mobile: mobile,
+                startingDate: date,
+                consumption: time,
+                from_name: from_name,
+                reply_to: reply_to,
+            };
+
+            emailjs.send(serviceID, templateID, templateParams).then(
+                function (response) {
+                    alert('Order Sent' + response.status + response.text);
+                    location.reload();
+                },
+                function (error) {
+                    alert('error sending your email');
+                }, (err) => {
+                    alert(JSON.stringify(err));
+                }
+            );
         }
 
         // When the user clicks on <span> (x), close the modal
-        span.onclick = function() {
-            modal.style.display = "none";
-        }
+        // span.onclick = function() {
+        //   modal.style.display = "none";
+        // }
 
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function(event) {
+        window.onclick = function (event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
         }
+
+        function backToHome() {
+            window.location = 'index.html'
+        }
     </script>
+
 </body>
 
 </html>

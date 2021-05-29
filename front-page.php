@@ -63,42 +63,39 @@
             <div class="section_2__col__col-2">
                 <form action="#">
                     <div class="input">
-                        <p class="section_2__col__col-2__label" for="fullname">
-                            FULL NAME
-                        </p>
-                        <input type="text" />
+                        <p class="section_2__col__col-2__label" for="fullname">FULL NAME</p>
+                        <input required type="text" name="full_name" id="full_name">
                     </div>
 
                     <div class="input mt-2">
-                        <p class="section_2__col__col-2__label" for="fullname">ADDRESS</p>
-                        <input type="text" />
+                        <p class="section_2__col__col-2__label" for="address">ADDRESS</p>
+                        <input required type="text" name="address" id="addr">
                     </div>
 
                     <div class="input mt-2">
-                        <p class="section_2__col__col-2__label" for="fullname">
-                            LANDMARK
-                        </p>
-                        <input type="text" />
+                        <p class="section_2__col__col-2__label" for="land">LANDMARK</p>
+                        <select required name="landmark" id="land">
+                            <option value="Anytime fitness 1">Anytime fitness 1</option>
+                            <option value="Anytime fitness 2">Anytime fitness 2</option>
+                            <option value="Anytime fitness 3">Anytime fitness 3</option>
+                            <option value="Anytime fitness 4">Anytime fitness 4</option>
+                        </select>
                     </div>
 
                     <div class="input mt-2">
-                        <p class="section_2__col__col-2__label" for="fullname">
-                            EMAIL ADDRESS
-                        </p>
-                        <input type="text" />
+                        <p class="section_2__col__col-2__label" for="to_name" id="email">EMAIL ADDRESS</p>
+                        <input required type="text" name="to_name" id="to_name">
                     </div>
 
                     <div class="input mt-2">
-                        <p class="section_2__col__col-2__label" for="fullname">
-                            MOBILE NUMBER
-                        </p>
-                        <input type="text" />
+                        <p class="section_2__col__col-2__label" for="mobile_number">MOBILE NUMBER</p>
+                        <input required type="text" name="mobile_number" id="mobile_number">
                     </div>
                 </form>
             </div>
         </div>
         <div class="button">
-            <button class="button__btn">VIEW PLANS + PRICING</button>
+            <button class="button__btn" onClick="startPlan()">VIEW PLANS + PRICING</button>
             <p class="button__agreement">
                 By clicking above, you agree to our Terms of Use and consent our
                 <br />
@@ -111,6 +108,31 @@
         <p class="footer__txt">Terms and Privacy | Disclaimer </p>
         <p class="footer__txt2">© YOGURT CULTURE 2021</p>
     </footer>
+
+    <script>
+        function startPlan() {
+            const fullname = document.getElementById('full_name').value;
+            const address = document.getElementById('addr').value;
+            const landmark = document.getElementById('land').value;
+            const email = document.getElementById('to_name').value;
+            const mobile_number = document.getElementById('mobile_number').value;
+
+            localStorage.setItem('fullname', fullname);
+            localStorage.setItem('address', address);
+            localStorage.setItem('landmark', landmark);
+            localStorage.setItem('email', email);
+            localStorage.setItem('mobile', mobile_number);
+
+            window.location = 'steps.html';
+            console.log([
+                fullname,
+                address,
+                landmark,
+                email,
+                mobile_number,
+            ]);
+        }
+    </script>
 </body>
 
 </html>
