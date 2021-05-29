@@ -6,6 +6,10 @@
   margin: 2em 0;
 }
 
+hr {
+  width: 67%;
+}
+
 input[type="text"] {
   border-radius: 57px;
   background: #f1f2f2;
@@ -753,5 +757,493 @@ select {
   font-family: "Montserrat", sans-serif;
   color: #d2d3d5;
   font-weight: 600;
+}
+
+.weeks {
+  text-align: center;
+  overflow: hidden;
+}
+
+.weeks__title {
+  font-size: 2.188rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 3em 0 0 0;
+}
+
+.weeks__foods {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.weeks__foods__item {
+  width: 25%;
+}
+
+.weeks__foods__title {
+  font-size: 1.25rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  padding-top: 1em;
+}
+
+.weeks__foods__desc {
+  font-size: 0.75rem;
+  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  color: #707070;
+  padding-top: 0.856em;
+}
+
+.sched {
+  text-align: center;
+  padding: 5em 0;
+  margin: 0 auto;
+}
+
+.sched__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sched__filter img {
+  width: 2%;
+  padding: 0 1em;
+}
+
+.sched__filter .filter_text {
+  font-size: 1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #0c55a0;
+  padding: 0 2em;
+}
+
+.sched__plan-sched {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  max-width: 1366px;
+  padding: 4em 0 0 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sched__plan-sched .plan_chosen {
+  width: 40%;
+  position: relative !important;
+}
+
+.sched__plan-sched .plan_chosen .tl_50 {
+  position: absolute !important;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.sched__plan-sched .plan_chosen .tl_50 .title {
+  font-size: 2.188rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.sched__plan-sched .plan_chosen .tl_50 .desc {
+  font-size: 0.813rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.sched__plan-sched .plan_chosen .tl_50 .desc2 {
+  font-size: 0.625rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #0c55a0;
+  padding: 3em 0;
+}
+
+.sched__plan-sched .width_20 {
+  width: 5%;
+}
+
+.sched__plan-sched .plan_week {
+  width: 40%;
+  border-radius: 42px;
+  -webkit-box-shadow: 0px 6px 6px 0px #ccc;
+          box-shadow: 0px 6px 6px 0px #ccc;
+  padding: 3em 0 0 0;
+}
+
+.sched__plan-sched .plan_week .title {
+  font-size: 1.875rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  color: #0c55a0;
+}
+
+.sched__plan-sched .plan_week .dates {
+  padding: 3em 0 5em 0;
+}
+
+.sched__plan-sched .plan_week .date-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+}
+
+.sched__plan-sched .plan_week .date-2 .day {
+  width: 30%;
+  font-size: 1.188rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.sched__plan-sched .plan_week .date-2 .input {
+  width: 50%;
+}
+
+.sched .checkout {
+  padding: 2em 0 0 0;
+}
+
+.sched .back {
+  padding: 2em 0 0 0;
+  font-size: 1.063rem;
+  font-family: "Montserrat", sans-serif;
+  color: #d2d3d5;
+  font-weight: 600;
+}
+
+.check_food {
+  text-align: center;
+}
+
+.check_food__title {
+  font-size: 2.188rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: #0c55a0;
+  padding: 3em 0;
+}
+
+.check_food .plan_sched {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1366px;
+}
+
+.check_food .plan_sched__plan-chosen {
+  width: 40%;
+}
+
+.check_food .plan_sched__plan-chosen .plan {
+  position: relative;
+}
+
+.check_food .plan_sched__plan-chosen .tl_50 {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.check_food .plan_sched__week-chosen {
+  width: 40%;
+  border-radius: 42px;
+  -webkit-box-shadow: 0px 6px 6px 0px #ccc;
+          box-shadow: 0px 6px 6px 0px #ccc;
+  padding: 3em 0 5em 4em;
+}
+
+.check_food .plan_sched__week-chosen__title {
+  font-size: 1.438rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.check_food .plan_sched__week-chosen__date-pick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  padding: 2em 0 0 0;
+}
+
+.check_food .plan_sched__week-chosen__date-pick .date-pick_day {
+  font-size: 0.938rem;
+  color: #707070;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  width: 15%;
+}
+
+.check_food .plan_sched__week-chosen__date-pick .pick-food {
+  font-size: 1.063rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.check_food .checkout {
+  padding: 2em 0 0 0;
+}
+
+.check_food .back {
+  padding: 2em 0 0 0;
+  font-size: 1.063rem;
+  font-family: "Montserrat", sans-serif;
+  color: #d2d3d5;
+  font-weight: 600;
+}
+
+.check_choices {
+  text-align: center;
+}
+
+.check_choices .choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  max-width: 1366px;
+  margin: 0 auto;
+}
+
+.check_choices__title {
+  font-size: 2.188rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding: 3em 0;
+}
+
+.check_choices__plan-chosen {
+  width: 40%;
+}
+
+.check_choices__plan-chosen .plan {
+  position: relative;
+}
+
+.check_choices__plan-chosen .compute {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: 1em 1em 0 0;
+}
+
+.check_choices__plan-chosen .compute__desc {
+  width: 35%;
+  font-size: 0.938rem;
+  color: #0c55a0;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+  text-align: left;
+}
+
+.check_choices__plan-chosen .compute__price {
+  width: 30%;
+  font-size: 0.938rem;
+  color: #0c55a0;
+  font-weight: 500;
+  font-family: "Montserrat", sans-serif;
+}
+
+.check_choices__plan-chosen .tl_50 {
+  position: absolute !important;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+.check_choices__plan-chosen .tl_50__title {
+  font-size: 2.063rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.check_choices__plan-chosen .tl_50__desc {
+  font-size: 0.75rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  padding: 1em 0;
+}
+
+.check_choices__plan-chosen .tl_50__desc2 {
+  font-size: 1.25rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.check_choices__week-chosen {
+  width: 40%;
+  border-radius: 42px;
+  -webkit-box-shadow: 0px 6px 6px 0px #ccc;
+          box-shadow: 0px 6px 6px 0px #ccc;
+  padding: 3em 0 5em 4em;
+}
+
+.check_choices__week-chosen__title {
+  font-size: 1.438rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.check_choices__week-chosen__date-pick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  padding: 2em 0 0 0;
+}
+
+.check_choices__week-chosen__date-pick .date-pick_day {
+  font-size: 0.938rem;
+  color: #707070;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+  width: 15%;
+}
+
+.check_choices__week-chosen__date-pick .pick-food {
+  font-size: 1.063rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1366px;
+}
+
+.container .container_width_50 {
+  width: 50%;
+}
+
+.container .start_plan {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 3em 0 0 0;
+  width: 40%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .start_plan__btn {
+  background: #0c55a0;
+  padding: 20px 40px;
+  color: #fff;
+  font-size: 1.063rem;
+  font-weight: 600;
+  border: none;
+  border-radius: 57px;
+  margin-top: 3 em;
+  text-align: center;
+}
+
+.back-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1366px;
+}
+
+.back-container .container_width_50 {
+  width: 50%;
+}
+
+.back-container .back {
+  font-size: 1.063rem;
+  font-family: "Montserrat", sans-serif;
+  color: #d2d3d5;
+  font-weight: 600;
+  padding: 2em 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 2em 0 2em 0;
+  width: 40%;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 /*# sourceMappingURL=style.css.map */
