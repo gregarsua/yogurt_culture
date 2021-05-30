@@ -191,7 +191,7 @@
                     with ripe mango jam</p>
             </div>
             <div class="choosing_food__foods__item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/salad.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Chicken Salad.png" alt="">
                 <p class="choosing_food__foods__title">Chicken Salad</p>
                 <p class="choosing_food__foods__desc">Vietnamese Yogurt mixed <br>
                     with ripe mango jam</p>
@@ -449,7 +449,7 @@
         $('.slider').slick({
             dots: true,
             infinite: true,
-            speed: 300,
+            speed: 700,
             slidesToShow: 4,
             slidesToScroll: 4,
             responsive: [{
