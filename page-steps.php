@@ -60,7 +60,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="">
             </li>
             <li class="steps__step-4">
-                <img src="assets/img/step-4.png" alt="">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-4.png" alt="">
                 <p class="step-4">CHECKOUT</p>
             </li>
         </ul>
@@ -447,7 +447,7 @@
     <script type="text/javascript">
         $('.slider').slick({
             dots: true,
-            infinite: false,
+            infinite: true,
             speed: 300,
             slidesToShow: 4,
             slidesToScroll: 4,
