@@ -123,7 +123,7 @@
             localStorage.setItem('email', email);
             localStorage.setItem('mobile', mobile_number);
 
-            window.location = 'steps.html';
+            window.location = 'http://wordpress.test/steps';
             console.log([
                 fullname,
                 address,

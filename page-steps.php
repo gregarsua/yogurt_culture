@@ -576,7 +576,7 @@
         }
 
         function goToCheckout() {
-            window.location = 'checkout.html'
+            window.location = 'http://wordpress.test/checkout'
         }
 
         function setConsumption(sel) {
