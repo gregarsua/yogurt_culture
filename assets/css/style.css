@@ -45,6 +45,14 @@ select {
   cursor: pointer !important;
 }
 
+.slick-prev {
+  display: none !important;
+}
+
+.slick-next {
+  display: none !important;
+}
+
 .promo_code {
   background: #0c55a0;
   text-align: center;
@@ -561,27 +569,27 @@ select {
   display: block;
 }
 
-.week__title {
+.week__plan .tl_50 .title {
   color: #0c55a0;
   font-family: "Montserrat", sans-serif;
   font-size: 2.188rem;
   font-weight: 600;
 }
 
-.week__desc {
+.week__plan .tl_50 .desc {
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
+  font-weight: 600;
+  padding: 1.5em 0 0.5em 0;
+}
+
+.week__plan .tl_50 .desc-2 {
   color: #0c55a0;
   font-family: "Montserrat", sans-serif;
   font-size: 0.813rem;
   font-weight: 600;
   padding: 0.5em 0;
-}
-
-.week__desc2 {
-  color: #0c55a0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.813rem;
-  font-weight: 600;
-  padding: 1em 0;
 }
 
 .week__calendar {
@@ -705,19 +713,20 @@ select {
 }
 
 .choosing_food .sched__plan-sched .plan_chosen .tl_50 .desc {
-  font-size: 0.813rem;
   color: #0c55a0;
   font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
   font-weight: 600;
+  padding: 1.5em 0 0.5em 0;
 }
 
-.choosing_food .sched__plan-sched .plan_chosen .tl_50 .desc2 {
+.choosing_food .sched__plan-sched .plan_chosen .tl_50 .desc-2 {
   font-size: 0.625rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: italic;
   color: #0c55a0;
-  padding: 3em 0;
+  padding: 0.5em 0;
 }
 
 .choosing_food .sched__plan-sched .plan_week {
@@ -979,7 +988,7 @@ select {
   position: relative;
 }
 
-.check_food .plan_sched__plan-chosen .tl_50 {
+.check_food .plan_sched__plan-chosen .plan .tl_50 {
   position: absolute !important;
   top: 50%;
   left: 50%;
@@ -988,6 +997,30 @@ select {
   margin: 0;
   padding: 0;
   display: block;
+}
+
+.check_food .plan_sched__plan-chosen .plan .title {
+  font-size: 2.188rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.check_food .plan_sched__plan-chosen .plan .desc {
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
+  font-weight: 600;
+  padding: 1.5em 0 0.5em 0;
+}
+
+.check_food .plan_sched__plan-chosen .plan .desc-2 {
+  font-size: 0.625rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #0c55a0;
+  padding: 0.5em 0;
 }
 
 .check_food .plan_sched__week-chosen {
@@ -1374,17 +1407,10 @@ select {
   width: 45%;
   border-radius: 70px;
   text-align: center;
+  /* The Close Button */
 }
 
-.title {
-  font-size: 2.188rem;
-  color: #0c55a0;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  padding-bottom: 1em;
-}
-
-.desc {
+.modal-content .desc {
   padding: 1em 0;
   font-size: 0.938rem;
   color: #0c55a0;
@@ -1392,7 +1418,15 @@ select {
   font-weight: 400;
 }
 
-.modal_btn {
+.modal-content .title {
+  font-size: 2.188rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding-bottom: 1em;
+}
+
+.modal-content .modal_btn {
   background: #0c55a0;
   border-radius: 23px;
   color: #fff;
@@ -1401,16 +1435,15 @@ select {
   margin: 4em 0 0 0;
 }
 
-/* The Close Button */
-.close {
+.modal-content .close {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.modal-content .close:hover,
+.modal-content .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;

@@ -118,7 +118,7 @@
                         NANO
                     </p>
                     <p class="desc">One week Trial Plan</p>
-                    <p class="desc2">*Limited Time Only</p>
+                    <p class="desc-2">*Limited Time Only</p>
                 </div>
             </div>
             <div class="week__calendar">
@@ -213,7 +213,7 @@
                             NANO
                         </p>
                         <p class="desc">One week Trial Plan</p>
-                        <p class="desc2">*Limited Time Only</p>
+                        <p class="desc-2">*Limited Time Only</p>
                     </div>
                 </div>
 
@@ -306,11 +306,11 @@
                 <div class="plan">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
                     <div class="tl_50">
-                        <p class="week__title">
+                        <p class="title">
                             NANO
                         </p>
-                        <p class="week__desc">One Week Trial Plan</p>
-                        <p class="week__desc2">*Limited Time Only</p>
+                        <p class="desc">One Week Trial Plan</p>
+                        <p class="desc-2">*Limited Time Only</p>
                     </div>
                 </div>
             </div>
@@ -443,6 +443,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
 
     <script type="text/javascript">
         $('.slider').slick({
