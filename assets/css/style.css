@@ -621,7 +621,7 @@ select {
   color: #0c55a0;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  padding: 3em 0 0 0;
+  padding: 3em 0 1em 0;
 }
 
 .choosing_food__foods {
@@ -978,6 +978,7 @@ select {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 1366px;
+  margin: 0 auto;
 }
 
 .check_food .plan_sched__plan-chosen {
