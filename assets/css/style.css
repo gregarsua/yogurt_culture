@@ -32,6 +32,12 @@ input[type="text"] {
   }
 }
 
+@media only screen and (max-width: 481px) {
+  input[type="text"] {
+    width: 90%;
+  }
+}
+
 .slick-slide img {
   display: initial !important;
   text-align: center;
@@ -69,6 +75,12 @@ select {
     padding: 12px;
     margin: 0.5em;
     width: 85%;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  select {
+    width: 97%;
   }
 }
 
@@ -111,6 +123,12 @@ select {
   padding: 1em 0;
 }
 
+@media only screen and (max-width: 481px) {
+  .section_1 {
+    display: block;
+  }
+}
+
 .section_1__logo {
   width: 80%;
 }
@@ -118,6 +136,12 @@ select {
 @media only screen and (max-width: 768px) {
   .section_1__logo {
     width: 70%;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .section_1__logo {
+    width: 40%;
   }
 }
 
@@ -146,6 +170,12 @@ select {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .section_1__list {
+    display: none;
   }
 }
 
@@ -315,6 +345,12 @@ select {
   }
 }
 
+@media only screen and (max-width: 481px) {
+  .section_2__title {
+    padding: 1em;
+  }
+}
+
 .section_2__col {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -325,10 +361,20 @@ select {
   justify-content: center;
   margin: 0 auto;
   max-width: 1366px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 481px) {
+  .section_2__col {
+    display: block;
+    width: 100%;
+  }
 }
 
 .section_2__col__col-1 {
-  width: 50%;
+  width: 60%;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -343,8 +389,14 @@ select {
   }
 }
 
+@media only screen and (max-width: 481px) {
+  .section_2__col__col-1 {
+    width: 100%;
+  }
+}
+
 .section_2__col__col-1 .kalorie {
-  width: 100%;
+  width: 90%;
 }
 
 @media only screen and (max-width: 768px) {
@@ -353,9 +405,22 @@ select {
   }
 }
 
+@media only screen and (max-width: 481px) {
+  .section_2__col__col-1 .kalorie {
+    width: 80%;
+  }
+}
+
 .section_2__col__col-2 {
   width: 50%;
   text-align: left;
+}
+
+@media only screen and (max-width: 481px) {
+  .section_2__col__col-2 {
+    width: 85%;
+    padding: 20px;
+  }
 }
 
 .section_2__col__col-2__label {
