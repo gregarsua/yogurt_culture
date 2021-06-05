@@ -33,34 +33,35 @@
         </p>
     </div>
 
-    <div class="steps">
+    <div class="section_1">
         <a href="<?php echo esc_url(home_url('/')); ?>">
             <img class="section_1__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" />
         </a>
-        <ul class="steps__list">
-            <li class="steps__step-1">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-1_grayed.png" alt="">
-                <p class="step-1">LET’S START</p>
+
+        <ul class="section_1__list">
+            <li class="section_1__step-1">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-1_grayed.png" alt="" />
+                <p class="step-1" style="color: #d2d3d5;">LET’S START</p>
             </li>
-            <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="">
+            <li class="step-dot">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
             </li>
-            <li class="steps__step-2">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-2_colored.png" alt="">
-                <p class="step-2">SELECT PLAN</p>
+            <li class="section_1__step-2">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-2_colored.png" alt="" />
+                <p class="step-2" style="color:#0c55a0 ;">SELECT PLAN</p>
             </li>
-            <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="">
+            <li class="step-dot">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
             </li>
-            <li class="steps__step-3">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-3.png" alt="">
+            <li class="section_1__step-3">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-3.png" alt="" />
                 <p class="step-3">SELECT ITEMS</p>
             </li>
-            <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="">
+            <li class="step-dot">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
             </li>
-            <li class="steps__step-4">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-4.png" alt="">
+            <li class="section_1__step-4">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-4.png" alt="" />
                 <p class="step-4">CHECKOUT</p>
             </li>
         </ul>
@@ -85,7 +86,6 @@
                     <p class="plan_1__desc">One week Trial Plan</p>
                 </div>
             </div>
-
         </div>
 
         <div class="promo">

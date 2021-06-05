@@ -19,6 +19,19 @@ input[type="text"] {
   margin: 1em 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  input[type="text"] {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  input[type="text"] {
+    padding: 10px;
+    margin: 0.5em;
+  }
+}
+
 .slick-slide img {
   display: initial !important;
   text-align: center;
@@ -43,6 +56,20 @@ select {
   color: #b2b1b1;
   text-align: center;
   cursor: pointer !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  select {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  select {
+    padding: 12px;
+    margin: 0.5em;
+    width: 85%;
+  }
 }
 
 .slick-prev {
@@ -88,6 +115,12 @@ select {
   width: 80%;
 }
 
+@media only screen and (max-width: 768px) {
+  .section_1__logo {
+    width: 70%;
+  }
+}
+
 .section_1__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,6 +132,21 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section_1__list {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section_1__list {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
 }
 
 .section_1__step-1 {
@@ -114,12 +162,28 @@ select {
           align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .section_1__step-1 {
+    width: 20%;
+    padding: 10px;
+  }
+}
+
 .section_1__step-1 .step-1 {
   font-size: 0.83rem;
   font-family: "Montserrat", sans-serif;
   color: #0c55a0;
   font-weight: 600;
   padding-left: 26px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section_1__step-1 .step-1 {
+    text-align: left;
+    padding-left: 10px;
+    width: 15%;
+    font-size: 0.73rem;
+  }
 }
 
 .section_1__step-2 {
@@ -135,12 +199,28 @@ select {
           align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .section_1__step-2 {
+    width: 20%;
+    padding: 10px;
+  }
+}
+
 .section_1__step-2 .step-2 {
   font-size: 0.83rem;
   font-family: "Montserrat", sans-serif;
   color: #d2d3d5;
   font-weight: 600;
   padding-left: 26px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section_1__step-2 .step-2 {
+    text-align: left;
+    padding-left: 10px;
+    width: 15%;
+    font-size: 0.73rem;
+  }
 }
 
 .section_1__step-3 {
@@ -156,12 +236,28 @@ select {
           align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .section_1__step-3 {
+    width: 20%;
+    padding: 10px;
+  }
+}
+
 .section_1__step-3 .step-3 {
   font-size: 0.83rem;
   font-family: "Montserrat", sans-serif;
   color: #d2d3d5;
   font-weight: 600;
   padding-left: 26px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section_1__step-3 .step-3 {
+    text-align: left;
+    padding-left: 10px;
+    width: 15%;
+    font-size: 0.73rem;
+  }
 }
 
 .section_1__step-4 {
@@ -177,12 +273,28 @@ select {
           align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .section_1__step-4 {
+    width: 20%;
+    padding: 10px;
+  }
+}
+
 .section_1__step-4 .step-4 {
   font-size: 0.83rem;
   font-family: "Montserrat", sans-serif;
   color: #d2d3d5;
   font-weight: 600;
   padding-left: 26px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section_1__step-4 .step-4 {
+    text-align: left;
+    padding-left: 10px;
+    width: 15%;
+    font-size: 0.73rem;
+  }
 }
 
 .section_2 {
@@ -195,6 +307,12 @@ select {
   font-weight: 600;
   font-family: "Montserrat", sans-serif;
   padding: 3em 0;
+}
+
+@media only screen and (max-width: 768px) {
+  .section_2__title {
+    font-size: 2rem;
+  }
 }
 
 .section_2__col {
@@ -211,6 +329,28 @@ select {
 
 .section_2__col__col-1 {
   width: 50%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section_2__col__col-1 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section_2__col__col-1 {
+    width: 70%;
+  }
+}
+
+.section_2__col__col-1 .kalorie {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .section_2__col__col-1 .kalorie {
+    width: 80%;
+  }
 }
 
 .section_2__col__col-2 {
@@ -267,7 +407,7 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2.3125em 0;
+  padding: 1em 0;
 }
 
 .steps__list {
@@ -402,6 +542,18 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .choose_plan .plan_1 {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .choose_plan .plan_1 {
+    width: auto;
+  }
 }
 
 .choose_plan .plan_1__tl_50 {
