@@ -1453,6 +1453,13 @@ select {
           align-items: center;
   text-align: center;
   padding: 1em 1em 0 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 481px) {
+  .check_choices__plan-chosen .compute {
+    width: 100%;
+  }
 }
 
 .check_choices__plan-chosen .compute__desc {
@@ -1695,8 +1702,24 @@ select {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 481px) {
+  .content {
+    display: block;
+  }
+}
+
 .content .qr_code {
   width: 50%;
+}
+
+@media only screen and (max-width: 481px) {
+  .content .qr_code {
+    width: 100%;
+  }
+}
+
+.content .qr_code__img {
+  width: 100%;
 }
 
 .content .qr_code__txt {

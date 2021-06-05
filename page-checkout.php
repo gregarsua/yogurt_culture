@@ -17,35 +17,36 @@
         </p>
     </div>
 
-    <div class="steps">
+    <div class="section_1">
         <a href="<?php echo esc_url(home_url('/')); ?>">
             <img class="section_1__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" />
         </a>
-        <ul class="steps__list">
-            <li class="steps__step-1">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-1_grayed.png" alt="">
-                <p class="step-1">LET’S START</p>
+
+        <ul class="section_1__list">
+            <li class="section_1__step-1">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-1_grayed.png" alt="" />
+                <p class="step-1" style="color: #d2d3d5;">LET’S START</p>
             </li>
-            <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="">
+            <li class="step-dot">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
             </li>
-            <li class="steps__step-2">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-2.png" alt="">
-                <p class="step-2" style="color: #d2d3d5;">SELECT PLAN</p>
+            <li class="section_1__step-2">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-2_colored.png" alt="" />
+                <p class="step-2" style="color:#0c55a0 ;">SELECT PLAN</p>
             </li>
-            <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="">
+            <li class="step-dot">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
             </li>
-            <li class="steps__step-3">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-3.png" alt="">
+            <li class="section_1__step-3">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-3.png" alt="" />
                 <p class="step-3">SELECT ITEMS</p>
             </li>
-            <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="">
+            <li class="step-dot">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
             </li>
-            <li class="steps__step-4">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-4-colored.png" alt="">
-                <p class="step-4" style="color: #0c55a0;">CHECKOUT</p>
+            <li class="section_1__step-4">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-4.png" alt="" />
+                <p class="step-4">CHECKOUT</p>
             </li>
         </ul>
     </div>
@@ -59,14 +60,14 @@
 
         <div class="content">
             <div class="qr_code">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/qr.png" alt="">
+                <img class="qr_code__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/qr.png" alt="">
                 <p class="qr_code__txt">+ 63 967 019 5897</p>
                 <p class="qr_code__acc">ACCOUNT NUMBER</p>
             </div>
 
             <div class="check_choices__plan-chosen">
                 <div class="plan">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box_3.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
                     <div class="tl_50">
                         <p class="tl_50__title">
                             MICRO
@@ -136,7 +137,7 @@
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
-        (function () {
+        (function() {
             emailjs.init("user_1aX0fAWdjCJgtNQEYzWaF");
         })();
     </script>
@@ -151,7 +152,7 @@
         var span = document.getElementsByClassName("close")[0];
 
         // When the user clicks the button, open the modal 
-        btn.onclick = function () {
+        btn.onclick = function() {
             modal.style.display = "block";
             confirmOrder();
         }
@@ -212,11 +213,11 @@
             };
 
             emailjs.send(serviceID, templateID, templateParams).then(
-                function (response) {
+                function(response) {
                     alert('Order Sent' + response.status + response.text);
                     location.reload();
                 },
-                function (error) {
+                function(error) {
                     alert('error sending your email');
                 }, (err) => {
                     alert(JSON.stringify(err));
@@ -230,7 +231,7 @@
         // }
 
         // When the user clicks anywhere outside of the modal, close it
-        window.onclick = function (event) {
+        window.onclick = function(event) {
             if (event.target == modal) {
                 modal.style.display = "none";
             }
