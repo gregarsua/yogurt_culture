@@ -60,7 +60,7 @@ select {
   }
 
   @media only screen and (max-width: 768px) {
-    padding: 12px;
+    padding: 20px;
     margin: 0.5em;
     width: 85%;
   }
@@ -443,6 +443,10 @@ select {
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
     padding: 3em 0 0.5em 0;
+
+    @media only screen and (max-width: 481px) {
+      font-size: 2rem;
+    }
   }
 
   &__sel {
@@ -450,6 +454,10 @@ select {
     font-family: "Montserrat", sans-serif;
     color: #0c55a0;
     font-weight: 600;
+
+    @media only screen and (max-width: 481px) {
+      padding: 10px;
+    }
   }
 }
 
@@ -458,6 +466,7 @@ select {
   margin: 0 auto;
   width: 75%;
   padding: 5em 0 3em 0;
+  justify-content: center;
 
   .plan_1 {
     width: 33%;
@@ -620,10 +629,18 @@ select {
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: 481px) {
+    display: block;
+  }
+
   &__plan {
     width: 50%;
     text-align: center;
     position: relative !important;
+
+    @media only screen and (max-width: 481px) {
+      width: 100%;
+    }
 
     .tl_50 {
       position: absolute !important;
@@ -664,6 +681,12 @@ select {
   &__calendar {
     width: 50%;
     text-align: left;
+
+    @media only screen and (max-width: 481px) {
+      width: 80%;
+      padding: 30px;
+      margin: 0 auto;
+    }
 
     .start_date {
       font-size: 1rem;
@@ -747,9 +770,17 @@ select {
       max-width: 1200px;
       padding: 4em 0 0 0;
 
+      @media only screen and (max-width: 481px) {
+        display: block;
+      }
+
       .plan_chosen {
         width: 40%;
         position: relative !important;
+
+        @media only screen and (max-width: 481px) {
+          width: 100%;
+        }
 
         .tl_50 {
           position: absolute !important;
@@ -761,6 +792,10 @@ select {
           margin: 0;
           padding: 0;
           display: block;
+
+          @media only screen and (max-width: 481px) {
+            top: 50%;
+          }
 
           .title {
             font-size: 2.188rem;
@@ -794,6 +829,11 @@ select {
         box-shadow: 0px 6px 6px 0px #ccc;
         padding: 3em 0 0 0;
 
+        @media only screen and (max-width: 481px) {
+          width: 90%;
+          margin: 0 auto;
+        }
+
         .title {
           font-size: 1.875rem;
           font-family: "Montserrat", sans-serif;
@@ -819,6 +859,10 @@ select {
 
           .input {
             width: 50%;
+
+            @media only screen and (max-width: 481px) {
+              width: 60%;
+            }
           }
         }
       }
@@ -1009,6 +1053,10 @@ select {
     font-weight: 600;
     color: #0c55a0;
     padding: 3em 0;
+
+    @media only screen and (max-width: 481px) {
+      padding: 3em 1em;
+    }
   }
 
   .plan_sched {
@@ -1017,8 +1065,16 @@ select {
     max-width: 1366px;
     margin: 0 auto;
 
+    @media only screen and (max-width: 481px) {
+      display: block;
+    }
+
     &__plan-chosen {
       width: 40%;
+
+      @media only screen and (max-width: 481px) {
+        width: 100%;
+      }
 
       .plan {
         position: relative;
@@ -1067,6 +1123,12 @@ select {
       box-shadow: 0px 6px 6px 0px #ccc;
       padding: 3em 0 5em 4em;
 
+      @media only screen and (max-width: 481px) {
+        width: 70%;
+        padding: 3em 2em;
+        margin: 0 auto;
+      }
+
       &__title {
         font-size: 1.438rem;
         color: #0c55a0;
@@ -1086,6 +1148,10 @@ select {
           font-family: "Montserrat", sans-serif;
           font-weight: 300;
           width: 15%;
+
+          @media only screen and (max-width: 481px) {
+            width: 20%;
+          }
         }
 
         .pick-food {
@@ -1121,6 +1187,10 @@ select {
     justify-content: center;
     max-width: 1366px;
     margin: 0 auto;
+
+    @media only screen and (max-width: 481px) {
+      display: block;
+    }
   }
 
   &__title {
@@ -1134,8 +1204,16 @@ select {
   &__plan-chosen {
     width: 40%;
 
+    @media only screen and (max-width: 481px) {
+      width: 100%;
+    }
+
     .plan {
       position: relative;
+
+      @media only screen and (max-width: 481px) {
+        width: 100%;
+      }
     }
 
     .compute {
@@ -1204,6 +1282,12 @@ select {
     box-shadow: 0px 6px 6px 0px #ccc;
     padding: 3em 0 5em 4em;
 
+    @media only screen and (max-width: 481px) {
+      width: 70%;
+      padding: 3em 2em;
+      margin: 0 auto;
+    }
+
     &__title {
       font-size: 1.438rem;
       color: #0c55a0;
@@ -1223,6 +1307,10 @@ select {
         font-family: "Montserrat", sans-serif;
         font-weight: 300;
         width: 15%;
+
+        @media only screen and (max-width: 481px) {
+          width: 20%;
+        }
       }
 
       .pick-food {
@@ -1243,6 +1331,10 @@ select {
 
   .container_width_50 {
     width: 50%;
+
+    @media only screen and (max-width: 481px) {
+      width: auto;
+    }
   }
 
   .start_plan {
@@ -1252,6 +1344,10 @@ select {
     width: 40%;
     text-align: center;
     align-items: center;
+
+    @media only screen and (max-width: 481px) {
+      width: 60%;
+    }
 
     &__btn {
       background: #0c55a0;
@@ -1275,6 +1371,10 @@ select {
 
   .container_width_50 {
     width: 50%;
+
+    @media only screen and (max-width: 481px) {
+      width: auto;
+    }
   }
 
   .back {
@@ -1289,6 +1389,10 @@ select {
     width: 40%;
     text-align: center;
     align-items: center;
+
+    @media only screen and (max-width: 481px) {
+      width: 100%;
+    }
   }
 }
 

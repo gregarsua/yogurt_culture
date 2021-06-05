@@ -370,7 +370,7 @@
 
             <div class="check_choices__plan-chosen">
                 <div class="plan">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box_3.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
                     <div class="tl_50">
                         <p class="tl_50__title">
                             NANO
