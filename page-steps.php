@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/reset.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
@@ -33,34 +33,35 @@
         </p>
     </div>
 
-    <div class="steps">
-        <a href="<?php echo esc_url(home_url('/')); ?>">
-            <img class="section_1__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" />
+    <div class="section_1">
+        <a href="">
+            <img class="section_1__logo" src="/assets/img/logo.png" alt="" />
         </a>
-        <ul class="steps__list">
-            <li class="steps__step-1">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-1_grayed.png" alt="">
-                <p class="step-1">LET’S START</p>
+
+        <ul class="section_1__list">
+            <li class="section_1__step-1">
+                <img src="/assets/img/step-1_grayed.png" alt="" />
+                <p class="step-1" style="color: #d2d3d5;">LET’S START</p>
             </li>
-            <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="">
+            <li class="step-dot">
+                <img src="/assets/img/dot.png" alt="" />
             </li>
-            <li class="steps__step-2">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-2_colored.png" alt="">
-                <p class="step-2">SELECT PLAN</p>
+            <li class="section_1__step-2">
+                <img src="/assets/img/step-2_colored.png" alt="" />
+                <p class="step-2" style="color:#0c55a0 ;">SELECT PLAN</p>
             </li>
-            <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="">
+            <li class="step-dot">
+                <img src="/assets/img/dot.png" alt="" />
             </li>
-            <li class="steps__step-3">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-3.png" alt="">
+            <li class="section_1__step-3">
+                <img src="/assets/img/step-3.png" alt="" />
                 <p class="step-3">SELECT ITEMS</p>
             </li>
-            <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="">
+            <li class="step-dot">
+                <img src="/assets/img/dot.png" alt="" />
             </li>
-            <li class="steps__step-4">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-4.png" alt="">
+            <li class="section_1__step-4">
+                <img src="/assets/img/step-4.png" alt="" />
                 <p class="step-4">CHECKOUT</p>
             </li>
         </ul>
@@ -77,7 +78,7 @@
 
         <div class="choose_plan">
             <div class="plan_1" onClick="setPlan('nano')">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
+                <img src="/assets/img/box.png" alt="">
                 <div class="plan_1__tl_50">
                     <p class="plan_1__title">
                         NANO
@@ -85,25 +86,6 @@
                     <p class="plan_1__desc">One week Trial Plan</p>
                 </div>
             </div>
-            <div class="plan_2" onClick="setPlan('micro')">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
-                <div class="plan_1__tl_50">
-                    <p class="plan_1__title">
-                        MICRO
-                    </p>
-                    <p class="plan_1__desc">One week Trial Plan</p>
-                </div>
-            </div>
-            <div class="plan_3" onClick="setPlan('mega')">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
-                <div class="plan_1__tl_50">
-                    <p class="plan_1__title">
-                        MEGA
-                    </p>
-                    <p class="plan_1__desc">One week Trial Plan</p>
-                </div>
-            </div>
-
         </div>
 
         <div class="promo">
@@ -130,7 +112,7 @@
 
         <div class="week">
             <div class="week__plan">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
+                <img src="/assets/img/box.png" alt="">
                 <div class="tl_50">
                     <p class="title">
                         NANO
@@ -141,11 +123,11 @@
             </div>
             <div class="week__calendar">
                 <p class="start_date">STARTING DATE</p>
-                <input class="startingWeek" type="date" name="startingDate" id="startingDate" class="option" data-thumbnail="<?php echo get_template_directory_uri(); ?>/assets/img/calendar.png" onchange="setConsumptionDate(this)">
+                <input class="startingWeek" type="date" name="startingDate" id="startingDate" class="option" data-thumbnail="/assets/img/calendar.png" onchange="setConsumptionDate(this)">
 
                 <div class="input mt-2">
                     <p class="section_2__col__col-2__label" for="consumption">TIME OF CONSUMPTION</p>
-                    <select class="options" id="consumption" name="consumption">
+                    <select class="options" id="consumption" name="consumption" onChange="setConsumption(this)">
                         <option value="breakfast">BREAKFAST</option>
                         <option value="lunch">LUNCH</option>
                         <option value="dinner">DINNER</option>
@@ -168,339 +150,114 @@
     </div>
 
     <!-- CHOOSE FOOD -->
-    <div class="choosing_food" >
+    <div class="choosing_food" style="display: block;">
         <h2 class="choosing_food__title">CHOOSE YOUR FOOD</h2>
 
         <div class="choosing_food__foods slider">
             <div class="choosing_food__foods__item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-01.jpg" alt="">
+                <img src="/assets/img/Salad with Names-01.jpg" alt="">
             </div>
             <div class="choosing_food__foods__item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-02.jpg" alt="">
+                <img src="/assets/img/Salad with Names-02.jpg" alt="">
             </div>
             <div class="choosing_food__foods__item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-03.jpg" alt="">
+                <img src="/assets/img/Salad with Names-03.jpg" alt="">
             </div>
             <div class="choosing_food__foods__item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-04.jpg" alt="">
+                <img src="/assets/img/Salad with Names-04.jpg" alt="">
             </div>
             <div class="choosing_food__foods__item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-05.jpg" alt="">
+                <img src="/assets/img/Salad with Names-05.jpg" alt="">
             </div>
             <div class="choosing_food__foods__item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-06.jpg" alt="">
+                <img src="/assets/img/Salad with Names-06.jpg" alt="">
             </div>
             <div class="choosing_food__foods__item">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-07.jpg" alt="">
+                <img src="/assets/img/Salad with Names-07.jpg" alt="">
             </div>
         </div>
 
         <div class="sched">
             <div class="sched__filter">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/filter.svg" alt="">
+                <img src="/assets/img/filter.svg" alt="">
                 <p class="filter_text">Filter</p>
                 <input type="text" style="width: 20%;">
             </div>
-            <div class="nano_food_choice">
-                <div class="sched__plan-sched">
-                    <div class="plan_chosen">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
-                        <div class="tl_50">
-                            <p class="title">
-                                NANO
-                            </p>
-                            <p class="desc">One week Trial Plan</p>
-                            <p class="desc-2">*Limited Time Only</p>
-                        </div>
-                    </div>
-                    <div class="plan_week">
-                        <h2 class="title">Week One</h2>
-                        <div class="dates">
-                            <form action='#' class="form" id='nano_form'>
-                                <div class="date-2">
-                                    <p class="day">Mon</p>
-                                    <select class="input" onChange="setFood(this)">
-                                    </select>
-                                </div>
-                                <div class="date-2">
-                                    <p class="day">Tues</p>
-                                    <select class="input" onChange="setFood(this)">
-                                    </select>
-                                </div>
-                                <div class="date-2">
-                                    <p class="day">Wed</p>
-                                    <select class="input" onChange="setFood(this)">
-                                    </select>
-                                </div>
-                                <div class="date-2">
-                                    <p class="day">Thurs</p>
-                                    <select class="input" onChange="setFood(this)">
-                                    </select>
-                                </div>
-                                <div class="date-2">
-                                    <p class="day">Fri</p>
-                                    <select class="input" onChange="setFood(this)">
-                                    </select>
-                                </div>
-                                <div class="date-2">
-                                    <p class="day">Sat</p>
-                                    <select class="input" onChange="setFood(this)">
-                                    </select>
-                                </div>
-                            </form>
 
-                        </div>
+            <div class="sched__plan-sched">
+                <div class="plan_chosen">
+                    <img src="/assets/img/box.png" alt="">
+                    <div class="tl_50">
+                        <p class="title">
+                            NANO
+                        </p>
+                        <p class="desc">One week Trial Plan</p>
+                        <p class="desc-2">*Limited Time Only</p>
                     </div>
                 </div>
-            </div>
 
-            <div class="micro_food_choice">
-                <div class="sched__plan-sched responsive">
-                    <div class="plan_week">
-                        <h2 class="title">Week One</h2>
-                        <div class="dates">
-                            <div class="date-2">
-                                <p class="day">Mon</p>
-                                <select class="input">
-                                </select>
-                            </div>
+                <div class="plan_week">
+                    <h2 class="title">Week One</h2>
 
-                            <div class="date-2">
-                                <p class="day">Tues</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Wed</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Thurs</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Fri</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Sat</p>
-                                <select class="input">
-                                </select>
-                            </div>
+                    <div class="dates">
+                        <div class="date-2">
+                            <p class="day">Mon</p>
+                            <select class="input" name="nano_monday" id="nano_monday" onChange="setFood(this)">
+                                <option selected disabled>Please select a Yogurt</option>
+                                <option value="Banana Yogurt">Banana Yogurt</option>
+                                <option value="Strawberry Yogurt">Strawberry Yogurt</option>
+                                <option value="Mango Yogurt">Mango Yogurt</option>
+                            </select>
                         </div>
-                    </div>
 
-                    <div class="width_20"></div>
-                    <div class="plan_week">
-                        <h2 class="title">Week Two</h2>
-                        <div class="dates">
-                            <div class="date-2">
-                                <p class="day">Mon</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Tues</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Wed</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Thurs</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Fri</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Sat</p>
-                                <select class="input">
-                                </select>
-                            </div>
+                        <div class="date-2">
+                            <p class="day">Tues</p>
+                            <select class="input" name="nano_tuesday" id="nano_tuesday" onChange="setFood(this)">
+                                <option selected disabled>Please select a Yogurt</option>
+                                <option value="Banana Yogurt">Banana Yogurt</option>
+                                <option value="Strawberry Yogurt">Strawberry Yogurt</option>
+                                <option value="Mango Yogurt">Mango Yogurt</option>
+                            </select>
                         </div>
-                    </div>
-                </div>
-            </div>
 
-            <div class="mega_food_choice">
-                <div class="sched__plan-sched food">
-                    <div class="plan_week">
-                        <h2 class="title">Week One</h2>
-                        <div class="dates">
-                            <div class="date-2">
-                                <p class="day">Mon</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Tues</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Wed</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Thurs</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Fri</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Sat</p>
-                                <select class="input">
-                                </select>
-                            </div>
+                        <div class="date-2">
+                            <p class="day">Wed</p>
+                            <select class="input" name="nano_wednesday" id="nano_wednesday" onChange="setFood(this)">
+                                <option selected disabled>Please select a Yogurt</option>
+                                <option value="Banana Yogurt">Banana Yogurt</option>
+                                <option value="Strawberry Yogurt">Strawberry Yogurt</option>
+                                <option value="Mango Yogurt">Mango Yogurt</option>
+                            </select>
                         </div>
-                    </div>
-                    <div class="plan_week">
-                        <h2 class="title">Week Two</h2>
-                        <div class="dates">
-                            <div class="date-2">
-                                <p class="day">Mon</p>
-                                <select class="input">
-                                </select>
-                            </div>
 
-                            <div class="date-2">
-                                <p class="day">Tues</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Wed</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Thurs</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Fri</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Sat</p>
-                                <select class="input">
-                                </select>
-                            </div>
+                        <div class="date-2">
+                            <p class="day">Thurs</p>
+                            <select class="input" name="nano_thursday" id="nano_thursday" onChange="setFood(this)">
+                                <option selected disabled>Please select a Yogurt</option>
+                                <option value="Banana Yogurt">Banana Yogurt</option>
+                                <option value="Strawberry Yogurt">Strawberry Yogurt</option>
+                                <option value="Mango Yogurt">Mango Yogurt</option>
+                            </select>
                         </div>
-                    </div>
-                    <div class="plan_week">
-                        <h2 class="title">Week One</h2>
-                        <div class="dates">
-                            <div class="date-2">
-                                <p class="day">Mon</p>
-                                <select class="input">
-                                </select>
-                            </div>
 
-                            <div class="date-2">
-                                <p class="day">Tues</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Wed</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Thurs</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Fri</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Sat</p>
-                                <select class="input">
-                                </select>
-                            </div>
+                        <div class="date-2">
+                            <p class="day">Fri</p>
+                            <select class="input" name="nano_friday" id="nano_friday" onChange="setFood(this)">
+                                <option selected disabled>Please select a Yogurt</option>
+                                <option value="Banana Yogurt">Banana Yogurt</option>
+                                <option value="Strawberry Yogurt">Strawberry Yogurt</option>
+                                <option value="Mango Yogurt">Mango Yogurt</option>
+                            </select>
                         </div>
-                    </div>
-                    <div class="plan_week">
-                        <h2 class="title">Week Two</h2>
-                        <div class="dates">
-                            <div class="date-2">
-                                <p class="day">Mon</p>
-                                <select class="input">
-                                </select>
-                            </div>
 
-                            <div class="date-2">
-                                <p class="day">Tues</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Wed</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Thurs</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Fri</p>
-                                <select class="input">
-                                </select>
-                            </div>
-
-                            <div class="date-2">
-                                <p class="day">Sat</p>
-                                <select class="input">
-                                </select>
-                            </div>
+                        <div class="date-2">
+                            <p class="day">Sat</p>
+                            <select class="input" name="nano_saturday" id="nano_saturday" onChange="setFood(this)">
+                                <option selected disabled>Please select a Yogurt</option>
+                                <option value="Banana Yogurt">Banana Yogurt</option>
+                                <option value="Strawberry Yogurt">Strawberry Yogurt</option>
+                                <option value="Mango Yogurt">Mango Yogurt</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -526,7 +283,7 @@
         <div class="plan_sched">
             <div class="plan_sched__plan-chosen">
                 <div class="plan">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
+                    <img src="/assets/img/box.png" alt="">
                     <div class="tl_50">
                         <p class="title">
                             NANO
@@ -537,7 +294,7 @@
                 </div>
             </div>
             <div class="plan_sched__week-chosen" id="nano_section">
-                <form method="post">
+                <form id="nano_form" method="post">
                     <h2 class="plan_sched__week-chosen__title">Week One</h2>
 
                     <div class="plan_sched__week-chosen__date-pick">
@@ -613,7 +370,7 @@
 
             <div class="check_choices__plan-chosen">
                 <div class="plan">
-                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box_3.png" alt="">
+                    <img src="/assets/img/box.png" alt="">
                     <div class="tl_50">
                         <p class="tl_50__title">
                             NANO
@@ -701,27 +458,6 @@
         });
     </script>
     <script>
-        let selects = document.querySelectorAll('select')
-
-        let foods = [
-            'Andiamo, Fuso',
-            'Panzanella',
-            'Mashup Salad',
-            'Romanov Salad',
-            'Sexy Grilled Chix',
-            'Mr. Cobb',
-            'Indian Wraps',
-        ]
-
-        selects.forEach(select => {
-            foods.forEach((food, index) => {
-                let option = document.createElement('option')
-                option.value = food
-                option.innerHTML = food
-                select.appendChild(option)
-            })
-        });
-
         const choosing_plan_section = document.querySelector('.choosing_plan');
         const choosing_consumption_section = document.querySelector('.choosing_consumption');
         const choosing_food_section = document.querySelector('.choosing_food');
@@ -740,8 +476,8 @@
             switch (plan) {
                 case 'nano':
                     nanoPLan.style.border = '1px solid black';
-                    microPLan.style.border = 'none';
-                    megaPLan.style.border = 'none';
+                    // microPLan.style.border = 'none';
+                    // megaPLan.style.border = 'none';
                     localStorage.setItem('plan', plan);
                     break;
                 case 'micro':
@@ -766,31 +502,19 @@
         }
 
         function goToChoosingWeek() {
-            if (!localStorage.getItem('plan')) {
-                alert('Please select a plan')
-            } else {
-                choosing_plan_section.style.display = 'none';
-                choosing_consumption_section.style.display = 'block';
-                choosing_food_section.style.display = 'none';
-                check_food_section.style.display = 'none';
-                check_choices_section.style.display = 'none';
-            }
-
+            choosing_plan_section.style.display = 'none';
+            choosing_consumption_section.style.display = 'block';
+            choosing_food_section.style.display = 'none';
+            check_food_section.style.display = 'none';
+            check_choices_section.style.display = 'none';
         }
 
         function goToChoosingFood() {
-            const consumption = document.getElementById('consumption')
-            console.log(consumption.value);
-            localStorage.setItem('time', consumption.value);
-            if (!localStorage.getItem('time') || !localStorage.getItem('date')) {
-                alert('Please input time of consumption')
-            } else {
-                choosing_plan_section.style.display = 'none';
-                choosing_consumption_section.style.display = 'none';
-                choosing_food_section.style.display = 'block';
-                check_food_section.style.display = 'none';
-                check_choices_section.style.display = 'none';
-            }
+            choosing_plan_section.style.display = 'none';
+            choosing_consumption_section.style.display = 'none';
+            choosing_food_section.style.display = 'block';
+            check_food_section.style.display = 'none';
+            check_choices_section.style.display = 'none';
         }
 
         function goToCheckFood() {

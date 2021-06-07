@@ -6,13 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" />
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css" />
-    <style>
-        .button__btn {
-            cursor: pointer;
-        }
-    </style>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
 </head>
 
 <body>
@@ -24,34 +19,34 @@
     </div>
 
     <div class="section_1">
-        <a href="<?php echo esc_url(home_url('/')); ?>">
-            <img class="section_1__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" />
+        <a href="">
+            <img class="section_1__logo" src="/assets/img/logo.png" alt="" />
         </a>
 
         <ul class="section_1__list">
             <li class="section_1__step-1">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-1.png" alt="" />
+                <img src="/assets/img/step-1.png" alt="" />
                 <p class="step-1">LET’S START</p>
             </li>
-            <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
+            <li class="step-dot">
+                <img src="/assets/img/dot.png" alt="" />
             </li>
             <li class="section_1__step-2">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-2.png" alt="" />
+                <img src="/assets/img/step-2.png" alt="" />
                 <p class="step-2">SELECT PLAN</p>
             </li>
-            <li>
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
+            <li class="step-dot">
+                <img src="/assets/img/dot.png" alt="" />
             </li>
             <li class="section_1__step-3">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-3.png" alt="" />
+                <img src="/assets/img/step-3.png" alt="" />
                 <p class="step-3">SELECT ITEMS</p>
             </li>
-            <li>
-                <img src="assets/img/dot.png" alt="" />
+            <li class="step-dot">
+                <img src="/assets/img/dot.png" alt="" />
             </li>
             <li class="section_1__step-4">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-4.png" alt="" />
+                <img src="/assets/img/step-4.png" alt="" />
                 <p class="step-4">CHECKOUT</p>
             </li>
         </ul>
@@ -62,7 +57,7 @@
 
         <div class="section_2__col">
             <div class="section_2__col__col-1">
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/kalorie.png" alt="" />
+                <img class="kalorie" src="/assets/img/kalorie.png" alt="" />
             </div>
 
             <div class="section_2__col__col-2">
@@ -127,18 +122,8 @@
             localStorage.setItem('landmark', landmark);
             localStorage.setItem('email', email);
             localStorage.setItem('mobile', mobile_number);
-            if ([
-                    fullname,
-                    address,
-                    landmark,
-                    email,
-                    mobile_number,
-                ].includes('')) {
-                alert('input fields are missing')
-            } else {
-                // window.location = 'http://wordpress.test/steps';   
-                window.location = 'http://localhost:3000/step1.php';   
-            }
+
+            window.location = 'http://wordpress.test/steps';
             console.log([
                 fullname,
                 address,

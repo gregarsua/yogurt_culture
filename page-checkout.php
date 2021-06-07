@@ -17,35 +17,36 @@
         </p>
     </div>
 
-    <div class="steps">
-        <a href="<?php echo esc_url(home_url('/')); ?>">
-            <img class=" section_1__logo" src="/assets/img/logo.png" alt="" />
+    <div class="section_1">
+        <a href="">
+            <img class="section_1__logo" src="/assets/img/logo.png" alt="" />
         </a>
-        <ul class="steps__list">
-            <li class="steps__step-1">
-                <img src="/assets/img/step-1_grayed.png" alt="">
-                <p class="step-1">LET’S START</p>
+
+        <ul class="section_1__list">
+            <li class="section_1__step-1">
+                <img src="/assets/img/step-1_grayed.png" alt="" />
+                <p class="step-1" style="color: #d2d3d5;">LET’S START</p>
             </li>
-            <li>
-                <img src="/assets/img/dot.png" alt="">
+            <li class="step-dot">
+                <img src="/assets/img/dot.png" alt="" />
             </li>
-            <li class="steps__step-2">
-                <img src="/assets/img/step-2.png" alt="">
-                <p class="step-2" style="color: #d2d3d5;">SELECT PLAN</p>
+            <li class="section_1__step-2">
+                <img src="/assets/img/step-2_colored.png" alt="" />
+                <p class="step-2" style="color:#0c55a0 ;">SELECT PLAN</p>
             </li>
-            <li>
-                <img src="/assets/img/dot.png" alt="">
+            <li class="step-dot">
+                <img src="/assets/img/dot.png" alt="" />
             </li>
-            <li class="steps__step-3">
-                <img src="/assets/img/step-3.png" alt="">
+            <li class="section_1__step-3">
+                <img src="/assets/img/step-3.png" alt="" />
                 <p class="step-3">SELECT ITEMS</p>
             </li>
-            <li>
-                <img src="/assets/img/dot.png" alt="">
+            <li class="step-dot">
+                <img src="/assets/img/dot.png" alt="" />
             </li>
-            <li class="steps__step-4">
-                <img src="/assets/img/step-4-colored.png" alt="">
-                <p class="step-4" style="color: #0c55a0;">CHECKOUT</p>
+            <li class="section_1__step-4">
+                <img src="/assets/img/step-4.png" alt="" />
+                <p class="step-4">CHECKOUT</p>
             </li>
         </ul>
     </div>
@@ -59,17 +60,17 @@
 
         <div class="content">
             <div class="qr_code">
-                <img src="/assets/img/qr.png" alt="">
+                <img class="qr_code__img" src="/assets/img/qr.png" alt="">
                 <p class="qr_code__txt">+ 63 967 019 5897</p>
                 <p class="qr_code__acc">ACCOUNT NUMBER</p>
             </div>
 
             <div class="check_choices__plan-chosen">
                 <div class="plan">
-                    <img src="/assets/img/box_3.png" alt="">
+                    <img src="/assets/img/box.png" alt="">
                     <div class="tl_50">
                         <p class="tl_50__title plan_title">
-
+                            
                         </p>
                         <p class="tl_50__desc">Three Week Meal Plan</p>
                         <p class="tl_50__desc2">Php 5,400 </p>
@@ -186,33 +187,33 @@
                 case 'nano':
                     week_one = `
                     <h2> Week One</h2>
-                    <h3>${foodSelection[0]}</h3>
-                    <h3>${foodSelection[1]}</h3>
-                    <h3>${foodSelection[2]}</h3>
-                    <h3>${foodSelection[3]}</h3>
-                    <h3>${foodSelection[4]}</h3>
-                    <h3>${foodSelection[5]}</h3>
+                    <h3>- ${foodSelection[0]}</h3>
+                    <h3>- ${foodSelection[1]}</h3>
+                    <h3>- ${foodSelection[2]}</h3>
+                    <h3>- ${foodSelection[3]}</h3>
+                    <h3>- ${foodSelection[4]}</h3>
+                    <h3>- ${foodSelection[5]}</h3>
                     `
                     merged_week+= week_one
                     break;
                 case 'micro':
                     week_one = `
                     <h2> Week One</h2>
-                    <h3>${foodSelection[0]}</h3>
-                    <h3>${foodSelection[1]}</h3>
-                    <h3>${foodSelection[2]}</h3>
-                    <h3>${foodSelection[3]}</h3>
-                    <h3>${foodSelection[4]}</h3>
-                    <h3>${foodSelection[5]}</h3>
+                    <h3>- ${foodSelection[0]}</h3>
+                    <h3>- ${foodSelection[1]}</h3>
+                    <h3>- ${foodSelection[2]}</h3>
+                    <h3>- ${foodSelection[3]}</h3>
+                    <h3>- ${foodSelection[4]}</h3>
+                    <h3>- ${foodSelection[5]}</h3>
                     `
                     week_two = `
                     <h2> Week Two</h2>
-                    <h3>${foodSelection[6]}</h3>
-                    <h3>${foodSelection[7]}</h3>
-                    <h3>${foodSelection[8]}</h3>
-                    <h3>${foodSelection[9]}</h3>
-                    <h3>${foodSelection[10]}</h3>
-                    <h3>${foodSelection[11]}</h3>
+                    <h3>- ${foodSelection[6]}</h3>
+                    <h3>- ${foodSelection[7]}</h3>
+                    <h3>- ${foodSelection[8]}</h3>
+                    <h3>- ${foodSelection[9]}</h3>
+                    <h3>- ${foodSelection[10]}</h3>
+                    <h3>- ${foodSelection[11]}</h3>
                     `
                     merged_week+= week_one
                     merged_week+=  week_two
@@ -220,39 +221,39 @@
                 case 'mega':
                     week_one = `
                     <h2> Week One</h2>
-                    <h3>${foodSelection[0]}</h3>
-                    <h3>${foodSelection[1]}</h3>
-                    <h3>${foodSelection[2]}</h3>
-                    <h3>${foodSelection[3]}</h3>
-                    <h3>${foodSelection[4]}</h3>
-                    <h3>${foodSelection[5]}</h3>
+                    <h3>- ${foodSelection[0]}</h3>
+                    <h3>- ${foodSelection[1]}</h3>
+                    <h3>- ${foodSelection[2]}</h3>
+                    <h3>- ${foodSelection[3]}</h3>
+                    <h3>- ${foodSelection[4]}</h3>
+                    <h3>- ${foodSelection[5]}</h3>
                     `
                     week_two = `
                     <h2> Week Two</h2>
-                    <h3>${foodSelection[6]}</h3>
-                    <h3>${foodSelection[7]}</h3>
-                    <h3>${foodSelection[8]}</h3>
-                    <h3>${foodSelection[9]}</h3>
-                    <h3>${foodSelection[10]}</h3>
-                    <h3>${foodSelection[11]}</h3>
+                    <h3>- ${foodSelection[6]}</h3>
+                    <h3>- ${foodSelection[7]}</h3>
+                    <h3>- ${foodSelection[8]}</h3>
+                    <h3>- ${foodSelection[9]}</h3>
+                    <h3>- ${foodSelection[10]}</h3>
+                    <h3>- ${foodSelection[11]}</h3>
                     `
                     week_three = `
                     <h2> Week Three</h2>
-                    <h3>${foodSelection[12]}</h3>
-                    <h3>${foodSelection[13]}</h3>
-                    <h3>${foodSelection[14]}</h3>
-                    <h3>${foodSelection[15]}</h3>
-                    <h3>${foodSelection[16]}</h3>
-                    <h3>${foodSelection[17]}</h3>
+                    <h3>- ${foodSelection[12]}</h3>
+                    <h3>- ${foodSelection[13]}</h3>
+                    <h3>- ${foodSelection[14]}</h3>
+                    <h3>- ${foodSelection[15]}</h3>
+                    <h3>- ${foodSelection[16]}</h3>
+                    <h3>- ${foodSelection[17]}</h3>
                     `
                     week_four = `
                     <h2> Week Four</h2>
-                    <h3>${foodSelection[18]}</h3>
-                    <h3>${foodSelection[19]}</h3>
-                    <h3>${foodSelection[20]}</h3>
-                    <h3>${foodSelection[21]}</h3>
-                    <h3>${foodSelection[22]}</h3>
-                    <h3>${foodSelection[23]}</h3>
+                    <h3>- ${foodSelection[18]}</h3>
+                    <h3>- ${foodSelection[19]}</h3>
+                    <h3>- ${foodSelection[20]}</h3>
+                    <h3>- ${foodSelection[21]}</h3>
+                    <h3>- ${foodSelection[22]}</h3>
+                    <h3>- ${foodSelection[23]}</h3>
                     `
 
                     merged_week+= week_one
