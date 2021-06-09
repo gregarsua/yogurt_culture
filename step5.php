@@ -272,13 +272,13 @@
 
             </p>
             <p class="tl_50__desc">Three Week Meal Plan</p>
-            <p class="tl_50__desc2">Php 5,400 </p>
+            <p class="tl_50__desc2">₱ 5,400 </p>
           </div>
         </div>
 
         <div class="compute">
           <p class="compute__desc">Subtotal:</p>
-          <p class="compute__price">₱ 5,500.00</p>
+          <p id='subtotal_price' class="compute__price">₱ 5,500.00</p>
         </div>
 
         <div class="compute">
@@ -294,7 +294,7 @@
 
         <div class="compute">
           <p class="compute__desc" style="font-size: 1.313rem; font-weight: 600;">Total</p>
-          <p class="compute__price" style="font-size: 1.25rem; font-weight: 600;">₱ 5,500.00</p>
+          <p id='total_price' class="compute__price" style="font-size: 1.25rem; font-weight: 600;">₱ 5,500.00</p>
         </div>
       </div>
     </div>
@@ -324,6 +324,12 @@
     (function() {
       const plan_title = document.querySelector('.plan_title')
       plan_title.innerHTML = localStorage.getItem('plan').toUpperCase()
+
+      const tl_50__desc = document.querySelector('.tl_50__desc')
+      const tl_50__desc2 = document.querySelector('.tl_50__desc2')
+      const subtotal_price = document.querySelector('#subtotal_price')
+      const total_price = document.querySelector('#total_price')
+
       const foodSelection = JSON.parse(localStorage.getItem('food_selection'))
       const planSection = document.querySelectorAll('.check_choices__week-chosen')
       const section_nano = document.querySelector('#nano')
@@ -348,17 +354,32 @@
       const mega_pick_food_3 = mega_food_order_3.querySelectorAll('.pick-food')
       const mega_pick_food_4 = mega_food_order_4.querySelectorAll('.pick-food')
       let merged_pick_food = []
-
+      /**
+       *  1499, 2998 and 4500
+       * 
+       */
       switch (localStorage.getItem('plan')) {
         case 'nano':
+          tl_50__desc.innerHTML = 'One Week Trial Plan'
+          tl_50__desc2.innerHTML = '₱ 1,499'
+          subtotal_price.innerHTML = '₱ 1,499'
+          total_price.innerHTML = '₱ 1,499'
           merged_pick_food = [...pick_food_1]
           setFoodSelection(merged_pick_food)
           break;
         case 'micro':
+          tl_50__desc.innerHTML = 'Two Week Plan'
+          tl_50__desc2.innerHTML = '₱ 2,998'
+          subtotal_price.innerHTML = '₱ 2,998'
+          total_price.innerHTML = '₱ 2,998'
           merged_pick_food = [...micro_pick_food_1, ...micro_pick_food_2]
           setFoodSelection(merged_pick_food)
           break;
         case 'mega':
+          tl_50__desc.innerHTML = 'Three Week Plan'
+          tl_50__desc2.innerHTML = '₱ 4,500'
+          subtotal_price.innerHTML = '₱ 4,500'
+          total_price.innerHTML = '₱ 4,500'
           merged_pick_food = [
             ...mega_pick_food_1,
             ...mega_pick_food_2,

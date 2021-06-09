@@ -76,8 +76,8 @@
             <p class="title plan_title">
 
             </p>
-            <p class="desc">One Week Trial Plan</p>
-            <p class="desc-2">*Limited Time Only</p>
+            <p class="desc"></p>
+            <p class="desc-2"></p>
           </div>
         </div>
       </div>
@@ -331,16 +331,23 @@
       let merged_pick_food = []
       plan_title.innerHTML = localStorage.getItem('plan').toUpperCase()
 
+      const desc = document.querySelector('.desc')
+      const desc_2 = document.querySelector('.desc-2')
+
       switch (localStorage.getItem('plan')) {
         case 'nano':
+          desc.innerHTML = 'One Week Trial Plan';
+          desc_2.innerHTML = '*Limited Time Only'
           merged_pick_food = [...pick_food_1]
           setFoodSelection(merged_pick_food)
           break;
         case 'micro':
+          desc.innerHTML = 'Two Week Plan';
           merged_pick_food = [...micro_pick_food_1, ...micro_pick_food_2]
           setFoodSelection(merged_pick_food)
           break;
         case 'mega':
+          desc.innerHTML = 'One Month Plan';
           merged_pick_food = [
             ...mega_pick_food_1,
             ...mega_pick_food_2,

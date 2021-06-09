@@ -90,7 +90,7 @@
                     <p class="plan_1__title">
                         MICRO
                     </p>
-                    <p class="plan_1__desc">One week Trial Plan</p>
+                    <p class="plan_1__desc">Two week Plan</p>
                 </div>
             </div>
             <div class="plan_1" id="plan_3" onClick="setPlan('mega')">
@@ -99,7 +99,7 @@
                     <p class="plan_1__title">
                         MEGA
                     </p>
-                    <p class="plan_1__desc">One week Trial Plan</p>
+                    <p class="plan_1__desc">One month Plan</p>
                 </div>
             </div>
         </div>

@@ -84,8 +84,8 @@
           <p class="title plan_title">
 
           </p>
-          <p class="desc">One week Trial Plan</p>
-          <p class="desc-2">*Limited Time Only</p>
+          <p class="desc"></p>
+          <p class="desc-2"></p>
         </div>
       </div>
       <div class="week__calendar">
@@ -125,7 +125,24 @@
   <script>
     (function() {
       const plan_title = document.querySelector('.plan_title')
+      const desc = document.querySelector('.desc')
+      const desc_2 = document.querySelector('.desc-2')
       plan_title.innerHTML = localStorage.getItem('plan').toUpperCase()
+      switch (localStorage.getItem('plan')) {
+        case 'nano':
+          desc.innerHTML = 'One Week Trial Plan';
+          desc_2.innerHTML = '*Limited Time Only'
+          break;
+        case 'micro':
+          desc.innerHTML = 'Two Week Plan';
+          break;
+        case 'mega':
+          desc.innerHTML = 'One Month Plan';
+          break;
+      
+        default:
+          break;
+      }
     })()
 
     function goToChoosingFood() {

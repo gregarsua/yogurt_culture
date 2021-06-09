@@ -175,7 +175,7 @@
                 <p class="plan_1__title">
                   MICRO
                 </p>
-                <p class="plan_1__desc">One week Trial Plan</p>
+                <p class="plan_1__desc">Two Week Plan</p>
               </div>
             </div>
           </div>
@@ -278,7 +278,7 @@
                 <p class="plan_1__title">
                   MEGA
                 </p>
-                <p class="plan_1__desc">One week Trial Plan</p>
+                <p class="plan_1__desc">One Month Plan</p>
               </div>
             </div>
           </div>

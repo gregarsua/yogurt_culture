@@ -70,7 +70,7 @@
                     <img src="/assets/img/box.png" alt="">
                     <div class="tl_50">
                         <p class="tl_50__title plan_title">
-                            
+
                         </p>
                         <p class="tl_50__desc">Three Week Meal Plan</p>
                         <p class="tl_50__desc2">Php 5,400 </p>
@@ -79,7 +79,7 @@
 
                 <div class="compute">
                     <p class="compute__desc">Subtotal:</p>
-                    <p class="compute__price">₱ 5,500.00</p>
+                    <p id='subtotal_price' class="compute__price">₱ 5,500.00</p>
                 </div>
 
                 <div class="compute">
@@ -94,7 +94,7 @@
                 <hr>
                 <div class="compute">
                     <p class="compute__desc" style="font-size: 1.313rem; font-weight: 600;">Total</p>
-                    <p class="compute__price" style="font-size: 1.25rem; font-weight: 600;">₱ 5,500.00</p>
+                    <p id='total_price' class="compute__price" style="font-size: 1.25rem; font-weight: 600;">₱ 5,500.00</p>
                 </div>
 
                 <p class="notice">Once we receive the payment, <br>
@@ -138,12 +138,41 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-            emailjs.init("user_1aX0fAWdjCJgtNQEYzWaF");
+            emailjs.init("user_OuoAcJflVsGtmUVmKDLNz");
         })();
     </script>
     <script>
         const plan_title = document.querySelector('.plan_title')
         plan_title.innerHTML = localStorage.getItem('plan').toUpperCase()
+        const tl_50__desc = document.querySelector('.tl_50__desc')
+        const tl_50__desc2 = document.querySelector('.tl_50__desc2')
+        const subtotal_price = document.querySelector('#subtotal_price')
+        const total_price = document.querySelector('#total_price')
+
+        switch (localStorage.getItem('plan')) {
+        case 'nano':
+          tl_50__desc.innerHTML = 'One Week Trial Plan'
+          tl_50__desc2.innerHTML = '₱ 1,499'
+          subtotal_price.innerHTML = '₱ 1,499'
+          total_price.innerHTML = '₱ 1,499'
+          break;
+        case 'micro':
+          tl_50__desc.innerHTML = 'Two Week Plan'
+          tl_50__desc2.innerHTML = '₱ 2,998'
+          subtotal_price.innerHTML = '₱ 2,998'
+          total_price.innerHTML = '₱ 2,998'
+          break;
+        case 'mega':
+          tl_50__desc.innerHTML = 'Three Week Plan'
+          tl_50__desc2.innerHTML = '₱ 4,500'
+          subtotal_price.innerHTML = '₱ 4,500'
+          total_price.innerHTML = '₱ 4,500'
+          break;
+
+        default:
+          break;
+      }
+
         // Get the modal
         var modal = document.getElementById("myModal");
 
@@ -160,10 +189,10 @@
         }
 
         function confirmOrder() {
-            const serviceID = 'service_nv201jq';
-            const templateID = 'template_f8b2wye';
+            const serviceID = 'service_e4ti7a9';
+            const templateID = 'template_cbu7u1e';
             // company email on from_name
-            const from_name = 'ejessa0506@gmail.com'
+            const from_name = 'yogurtcultureph@gmail.com'
             // reply_to the user email
             const reply_to = localStorage.getItem('email')
 
@@ -194,7 +223,7 @@
                     <h3>- ${foodSelection[4]}</h3>
                     <h3>- ${foodSelection[5]}</h3>
                     `
-                    merged_week+= week_one
+                    merged_week += week_one
                     break;
                 case 'micro':
                     week_one = `
@@ -215,8 +244,8 @@
                     <h3>- ${foodSelection[10]}</h3>
                     <h3>- ${foodSelection[11]}</h3>
                     `
-                    merged_week+= week_one
-                    merged_week+=  week_two
+                    merged_week += week_one
+                    merged_week += week_two
                     break;
                 case 'mega':
                     week_one = `
@@ -256,12 +285,12 @@
                     <h3>- ${foodSelection[23]}</h3>
                     `
 
-                    merged_week+= week_one
-                    merged_week+=  week_two
-                    merged_week+= week_three
-                    merged_week+=  week_four
+                    merged_week += week_one
+                    merged_week += week_two
+                    merged_week += week_three
+                    merged_week += week_four
                     break;
-            
+
                 default:
                     break;
             }
@@ -296,7 +325,8 @@
             emailjs.send(serviceID, templateID, templateParams).then(
                 function(response) {
                     alert('Order Sent' + response.status + response.text);
-                    localStorage.clear(); 
+                    localStorage.clear();
+                    window.location = 'front-page.php'
                     location.reload();
                 },
                 function(error) {
