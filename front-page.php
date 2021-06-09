@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css" />
+=======
+    <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/reset.css" />
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
 </head>
 
 <body>
@@ -19,12 +24,18 @@
     </div>
 
     <div class="section_1">
+<<<<<<< HEAD
         <a href="<?php echo esc_url(home_url('/')); ?>">
             <img class="section_1__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" />
+=======
+        <a href="">
+            <img class="section_1__logo" src="/assets/img/logo.png" alt="" />
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
         </a>
 
         <ul class="section_1__list">
             <li class="section_1__step-1">
+<<<<<<< HEAD
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-1.png" alt="" />
                 <p class="step-1">LET’S START</p>
             </li>
@@ -47,6 +58,30 @@
             </li>
             <li class="section_1__step-4">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-4.png" alt="" />
+=======
+                <img src="/assets/img/step-1.png" alt="" />
+                <p class="step-1">LET’S START</p>
+            </li>
+            <li class="step-dot">
+                <img src="/assets/img/dot.png" alt="" />
+            </li>
+            <li class="section_1__step-2">
+                <img src="/assets/img/step-2.png" alt="" />
+                <p class="step-2">SELECT PLAN</p>
+            </li>
+            <li class="step-dot">
+                <img src="/assets/img/dot.png" alt="" />
+            </li>
+            <li class="section_1__step-3">
+                <img src="/assets/img/step-3.png" alt="" />
+                <p class="step-3">SELECT ITEMS</p>
+            </li>
+            <li class="step-dot">
+                <img src="/assets/img/dot.png" alt="" />
+            </li>
+            <li class="section_1__step-4">
+                <img src="/assets/img/step-4.png" alt="" />
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
                 <p class="step-4">CHECKOUT</p>
             </li>
         </ul>
@@ -57,7 +92,11 @@
 
         <div class="section_2__col">
             <div class="section_2__col__col-1">
+<<<<<<< HEAD
                 <img class="kalorie" src="<?php echo get_template_directory_uri(); ?>/assets/img/kalorie.png" alt="" />
+=======
+                <img class="kalorie" src="/assets/img/kalorie.png" alt="" />
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
             </div>
 
             <div class="section_2__col__col-2">

@@ -6,8 +6,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+<<<<<<< HEAD
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
+=======
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/reset.css">
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
@@ -34,12 +39,18 @@
     </div>
 
     <div class="section_1">
+<<<<<<< HEAD
         <a href="<?php echo esc_url(home_url('/')); ?>">
             <img class="section_1__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" />
+=======
+        <a href="">
+            <img class="section_1__logo" src="/assets/img/logo.png" alt="" />
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
         </a>
 
         <ul class="section_1__list">
             <li class="section_1__step-1">
+<<<<<<< HEAD
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-1_grayed.png" alt="" />
                 <p class="step-1" style="color: #d2d3d5;">LET’S START</p>
             </li>
@@ -62,6 +73,30 @@
             </li>
             <li class="section_1__step-4">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-4.png" alt="" />
+=======
+                <img src="/assets/img/step-1_grayed.png" alt="" />
+                <p class="step-1" style="color: #d2d3d5;">LET’S START</p>
+            </li>
+            <li class="step-dot">
+                <img src="/assets/img/dot.png" alt="" />
+            </li>
+            <li class="section_1__step-2">
+                <img src="/assets/img/step-2_colored.png" alt="" />
+                <p class="step-2" style="color:#0c55a0 ;">SELECT PLAN</p>
+            </li>
+            <li class="step-dot">
+                <img src="/assets/img/dot.png" alt="" />
+            </li>
+            <li class="section_1__step-3">
+                <img src="/assets/img/step-3.png" alt="" />
+                <p class="step-3">SELECT ITEMS</p>
+            </li>
+            <li class="step-dot">
+                <img src="/assets/img/dot.png" alt="" />
+            </li>
+            <li class="section_1__step-4">
+                <img src="/assets/img/step-4.png" alt="" />
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
                 <p class="step-4">CHECKOUT</p>
             </li>
         </ul>
@@ -78,7 +113,11 @@
 
         <div class="choose_plan">
             <div class="plan_1" onClick="setPlan('nano')">
+<<<<<<< HEAD
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
+=======
+                <img src="/assets/img/box.png" alt="">
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
                 <div class="plan_1__tl_50">
                     <p class="plan_1__title">
                         NANO
@@ -112,7 +151,11 @@
 
         <div class="week">
             <div class="week__plan">
+<<<<<<< HEAD
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
+=======
+                <img src="/assets/img/box.png" alt="">
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
                 <div class="tl_50">
                     <p class="title">
                         NANO
@@ -123,7 +166,11 @@
             </div>
             <div class="week__calendar">
                 <p class="start_date">STARTING DATE</p>
+<<<<<<< HEAD
                 <input class="startingWeek" type="date" name="startingDate" id="startingDate" class="option" data-thumbnail="<?php echo get_template_directory_uri(); ?>/assets/img/calendar.png" onchange="setConsumptionDate(this)">
+=======
+                <input class="startingWeek" type="date" name="startingDate" id="startingDate" class="option" data-thumbnail="/assets/img/calendar.png" onchange="setConsumptionDate(this)">
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
 
                 <div class="input mt-2">
                     <p class="section_2__col__col-2__label" for="consumption">TIME OF CONSUMPTION</p>
@@ -155,6 +202,7 @@
 
         <div class="choosing_food__foods slider">
             <div class="choosing_food__foods__item">
+<<<<<<< HEAD
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-01.jpg" alt="">
             </div>
             <div class="choosing_food__foods__item">
@@ -174,19 +222,48 @@
             </div>
             <div class="choosing_food__foods__item">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-07.jpg" alt="">
+=======
+                <img src="/assets/img/Salad with Names-01.jpg" alt="">
+            </div>
+            <div class="choosing_food__foods__item">
+                <img src="/assets/img/Salad with Names-02.jpg" alt="">
+            </div>
+            <div class="choosing_food__foods__item">
+                <img src="/assets/img/Salad with Names-03.jpg" alt="">
+            </div>
+            <div class="choosing_food__foods__item">
+                <img src="/assets/img/Salad with Names-04.jpg" alt="">
+            </div>
+            <div class="choosing_food__foods__item">
+                <img src="/assets/img/Salad with Names-05.jpg" alt="">
+            </div>
+            <div class="choosing_food__foods__item">
+                <img src="/assets/img/Salad with Names-06.jpg" alt="">
+            </div>
+            <div class="choosing_food__foods__item">
+                <img src="/assets/img/Salad with Names-07.jpg" alt="">
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
             </div>
         </div>
 
         <div class="sched">
             <div class="sched__filter">
+<<<<<<< HEAD
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/filter.svg" alt="">
+=======
+                <img src="/assets/img/filter.svg" alt="">
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
                 <p class="filter_text">Filter</p>
                 <input type="text" style="width: 20%;">
             </div>
 
             <div class="sched__plan-sched">
                 <div class="plan_chosen">
+<<<<<<< HEAD
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
+=======
+                    <img src="/assets/img/box.png" alt="">
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
                     <div class="tl_50">
                         <p class="title">
                             NANO
@@ -283,7 +360,11 @@
         <div class="plan_sched">
             <div class="plan_sched__plan-chosen">
                 <div class="plan">
+<<<<<<< HEAD
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
+=======
+                    <img src="/assets/img/box.png" alt="">
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
                     <div class="tl_50">
                         <p class="title">
                             NANO
@@ -370,7 +451,11 @@
 
             <div class="check_choices__plan-chosen">
                 <div class="plan">
+<<<<<<< HEAD
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
+=======
+                    <img src="/assets/img/box.png" alt="">
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
                     <div class="tl_50">
                         <p class="tl_50__title">
                             NANO

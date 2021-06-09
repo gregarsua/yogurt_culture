@@ -1865,4 +1865,11 @@ select {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
+<<<<<<< HEAD
+=======
+
+button {
+  cursor: pointer;
+}
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
 /*# sourceMappingURL=style.css.map */
