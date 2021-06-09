@@ -17,7 +17,21 @@ input[type="text"] {
   padding: 20px;
   width: 50%;
   margin: 1em 0;
+
+  @media only screen and (max-width: 1024px) {
+    width: 80%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 10px;
+    margin: 0.5em;
+  }
+
+  @media only screen and (max-width: 481px) {
+    width: 90%;
+  }
 }
+
 .slick-slide img {
   display: initial !important;
   text-align: center;
@@ -40,6 +54,28 @@ select {
   color: #b2b1b1;
   text-align: center;
   cursor: pointer !important;
+
+  @media only screen and (max-width: 1024px) {
+    width: 90%;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 20px;
+    margin: 0.5em;
+    width: 85%;
+  }
+
+  @media only screen and (max-width: 481px) {
+    width: 97%;
+  }
+}
+
+.slick-prev {
+  display: none !important;
+}
+
+.slick-next {
+  display: none !important;
 }
 
 .promo_code {
@@ -67,8 +103,19 @@ select {
   justify-content: center;
   padding: 1em 0;
 
+  @media only screen and (max-width: 481px) {
+    display: block;
+  }
+
   &__logo {
     width: 80%;
+
+    @media only screen and (max-width: 768px) {
+      width: 70%;
+    }
+    @media only screen and (max-width: 481px) {
+      width: 40%;
+    }
   }
 
   &__list {
@@ -76,6 +123,19 @@ select {
     width: 60%;
     justify-content: center;
     align-items: center;
+
+    @media only screen and (max-width: 1024px) {
+      width: 80%;
+    }
+
+    @media only screen and (max-width: 768px) {
+      width: 100%;
+      justify-content: flex-start;
+    }
+
+    @media only screen and (max-width: 481px) {
+      display: none;
+    }
   }
 
   &__step-1 {
@@ -84,12 +144,24 @@ select {
     justify-content: center;
     align-items: center;
 
+    @media only screen and (max-width: 768px) {
+      width: 20%;
+      padding: 10px;
+    }
+
     .step-1 {
       font-size: 0.83rem;
       font-family: "Montserrat", sans-serif;
       color: #0c55a0;
       font-weight: 600;
       padding-left: 26px;
+
+      @media only screen and (max-width: 1024px) {
+        text-align: left;
+        padding-left: 10px;
+        width: 15%;
+        font-size: 0.73rem;
+      }
     }
   }
 
@@ -99,12 +171,24 @@ select {
     justify-content: center;
     align-items: center;
 
+    @media only screen and (max-width: 768px) {
+      width: 20%;
+      padding: 10px;
+    }
+
     .step-2 {
       font-size: 0.83rem;
       font-family: "Montserrat", sans-serif;
       color: #d2d3d5;
       font-weight: 600;
       padding-left: 26px;
+
+      @media only screen and (max-width: 1024px) {
+        text-align: left;
+        padding-left: 10px;
+        width: 15%;
+        font-size: 0.73rem;
+      }
     }
   }
 
@@ -114,12 +198,24 @@ select {
     justify-content: center;
     align-items: center;
 
+    @media only screen and (max-width: 768px) {
+      width: 20%;
+      padding: 10px;
+    }
+
     .step-3 {
       font-size: 0.83rem;
       font-family: "Montserrat", sans-serif;
       color: #d2d3d5;
       font-weight: 600;
       padding-left: 26px;
+
+      @media only screen and (max-width: 1024px) {
+        text-align: left;
+        padding-left: 10px;
+        width: 15%;
+        font-size: 0.73rem;
+      }
     }
   }
 
@@ -129,12 +225,24 @@ select {
     justify-content: center;
     align-items: center;
 
+    @media only screen and (max-width: 768px) {
+      width: 20%;
+      padding: 10px;
+    }
+
     .step-4 {
       font-size: 0.83rem;
       font-family: "Montserrat", sans-serif;
       color: #d2d3d5;
       font-weight: 600;
       padding-left: 26px;
+
+      @media only screen and (max-width: 1024px) {
+        text-align: left;
+        padding-left: 10px;
+        width: 15%;
+        font-size: 0.73rem;
+      }
     }
   }
 }
@@ -148,6 +256,14 @@ select {
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
     padding: 3em 0;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 2rem;
+    }
+
+    @media only screen and (max-width: 481px) {
+      padding: 1em;
+    }
   }
 
   &__col {
@@ -156,14 +272,49 @@ select {
     justify-content: center;
     margin: 0 auto;
     max-width: 1366px;
+    align-items: center;
+
+    @media only screen and (max-width: 481px) {
+      display: block;
+      width: 100%;
+    }
 
     &__col-1 {
-      width: 50%;
+      width: 60%;
+
+      @media only screen and (max-width: 1024px) {
+        width: 80%;
+      }
+
+      @media only screen and (max-width: 768px) {
+        width: 70%;
+      }
+
+      @media only screen and (max-width: 481px) {
+        width: 100%;
+      }
+
+      .kalorie {
+        width: 90%;
+
+        @media only screen and (max-width: 768px) {
+          width: 80%;
+        }
+
+        @media only screen and (max-width: 481px) {
+          width: 80%;
+        }
+      }
     }
 
     &__col-2 {
       width: 50%;
       text-align: left;
+
+      @media only screen and (max-width: 481px) {
+        width: 85%;
+        padding: 20px;
+      }
 
       &__label {
         width: 100% !important;
@@ -213,7 +364,7 @@ select {
   margin: 0 auto;
   text-align: center;
   justify-content: center;
-  padding: 2.3125em 0;
+  padding: 1em 0;
 
   &__list {
     display: flex;
@@ -292,6 +443,10 @@ select {
     font-weight: 600;
     font-family: "Montserrat", sans-serif;
     padding: 3em 0 0.5em 0;
+
+    @media only screen and (max-width: 481px) {
+      font-size: 2rem;
+    }
   }
 
   &__sel {
@@ -299,6 +454,10 @@ select {
     font-family: "Montserrat", sans-serif;
     color: #0c55a0;
     font-weight: 600;
+
+    @media only screen and (max-width: 481px) {
+      padding: 10px;
+    }
   }
 }
 
@@ -307,12 +466,21 @@ select {
   margin: 0 auto;
   width: 75%;
   padding: 5em 0 3em 0;
+  justify-content: center;
 
   .plan_1 {
     width: 33%;
     text-align: center;
     position: relative !important;
     justify-content: center;
+
+    @media only screen and (max-width: 1024px) {
+      width: auto;
+    }
+
+    @media only screen and (max-width: 768px) {
+      width: auto;
+    }
 
     &__tl_50 {
       position: absolute !important;
@@ -461,10 +629,18 @@ select {
   align-items: center;
   justify-content: center;
 
+  @media only screen and (max-width: 481px) {
+    display: block;
+  }
+
   &__plan {
     width: 50%;
     text-align: center;
     position: relative !important;
+
+    @media only screen and (max-width: 481px) {
+      width: 100%;
+    }
 
     .tl_50 {
       position: absolute !important;
@@ -476,35 +652,41 @@ select {
       margin: 0;
       padding: 0;
       display: block;
+
+      .title {
+        color: #0c55a0;
+        font-family: "Montserrat", sans-serif;
+        font-size: 2.188rem;
+        font-weight: 600;
+      }
+
+      .desc {
+        color: #0c55a0;
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.813rem;
+        font-weight: 600;
+        padding: 1.5em 0 0.5em 0;
+      }
+
+      .desc-2 {
+        color: #0c55a0;
+        font-family: "Montserrat", sans-serif;
+        font-size: 0.813rem;
+        font-weight: 600;
+        padding: 0.5em 0;
+      }
     }
-  }
-
-  &__title {
-    color: #0c55a0;
-    font-family: "Montserrat", sans-serif;
-    font-size: 2.188rem;
-    font-weight: 600;
-  }
-
-  &__desc {
-    color: #0c55a0;
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.813rem;
-    font-weight: 600;
-    padding: 0.5em 0;
-  }
-
-  &__desc2 {
-    color: #0c55a0;
-    font-family: "Montserrat", sans-serif;
-    font-size: 0.813rem;
-    font-weight: 600;
-    padding: 1em 0;
   }
 
   &__calendar {
     width: 50%;
     text-align: left;
+
+    @media only screen and (max-width: 481px) {
+      width: 80%;
+      padding: 30px;
+      margin: 0 auto;
+    }
 
     .start_date {
       font-size: 1rem;
@@ -532,7 +714,7 @@ select {
     color: #0c55a0;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
-    padding: 3em 0 0 0;
+    padding: 3em 0 1em 0;
   }
 
   &__foods {
@@ -588,9 +770,17 @@ select {
       max-width: 1200px;
       padding: 4em 0 0 0;
 
+      @media only screen and (max-width: 481px) {
+        display: block;
+      }
+
       .plan_chosen {
         width: 40%;
         position: relative !important;
+
+        @media only screen and (max-width: 481px) {
+          width: 100%;
+        }
 
         .tl_50 {
           position: absolute !important;
@@ -603,6 +793,10 @@ select {
           padding: 0;
           display: block;
 
+          @media only screen and (max-width: 481px) {
+            top: 50%;
+          }
+
           .title {
             font-size: 2.188rem;
             color: #0c55a0;
@@ -611,19 +805,20 @@ select {
           }
 
           .desc {
-            font-size: 0.813rem;
             color: #0c55a0;
             font-family: "Montserrat", sans-serif;
+            font-size: 0.813rem;
             font-weight: 600;
+            padding: 1.5em 0 0.5em 0;
           }
 
-          .desc2 {
+          .desc-2 {
             font-size: 0.625rem;
             font-family: "Montserrat", sans-serif;
             font-weight: 400;
             font-style: italic;
             color: #0c55a0;
-            padding: 3em 0;
+            padding: 0.5em 0;
           }
         }
       }
@@ -633,6 +828,11 @@ select {
         border-radius: 42px;
         box-shadow: 0px 6px 6px 0px #ccc;
         padding: 3em 0 0 0;
+
+        @media only screen and (max-width: 481px) {
+          width: 90%;
+          margin: 0 auto;
+        }
 
         .title {
           font-size: 1.875rem;
@@ -659,6 +859,10 @@ select {
 
           .input {
             width: 50%;
+
+            @media only screen and (max-width: 481px) {
+              width: 60%;
+            }
           }
         }
       }
@@ -849,30 +1053,67 @@ select {
     font-weight: 600;
     color: #0c55a0;
     padding: 3em 0;
+
+    @media only screen and (max-width: 481px) {
+      padding: 3em 1em;
+    }
   }
 
   .plan_sched {
     display: flex;
     justify-content: center;
     max-width: 1366px;
+    margin: 0 auto;
+
+    @media only screen and (max-width: 481px) {
+      display: block;
+    }
 
     &__plan-chosen {
       width: 40%;
 
-      .plan {
-        position: relative;
+      @media only screen and (max-width: 481px) {
+        width: 100%;
       }
 
-      .tl_50 {
-        position: absolute !important;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-        margin: 0;
-        padding: 0;
-        display: block;
+      .plan {
+        position: relative;
+
+        .tl_50 {
+          position: absolute !important;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          margin: 0;
+          padding: 0;
+          display: block;
+        }
+
+        .title {
+          font-size: 2.188rem;
+          color: #0c55a0;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 600;
+        }
+
+        .desc {
+          color: #0c55a0;
+          font-family: "Montserrat", sans-serif;
+          font-size: 0.813rem;
+          font-weight: 600;
+          padding: 1.5em 0 0.5em 0;
+        }
+
+        .desc-2 {
+          font-size: 0.625rem;
+          font-family: "Montserrat", sans-serif;
+          font-weight: 400;
+          font-style: italic;
+          color: #0c55a0;
+          padding: 0.5em 0;
+        }
       }
     }
 
@@ -881,6 +1122,12 @@ select {
       border-radius: 42px;
       box-shadow: 0px 6px 6px 0px #ccc;
       padding: 3em 0 5em 4em;
+
+      @media only screen and (max-width: 481px) {
+        width: 70%;
+        padding: 3em 2em;
+        margin: 0 auto;
+      }
 
       &__title {
         font-size: 1.438rem;
@@ -901,6 +1148,10 @@ select {
           font-family: "Montserrat", sans-serif;
           font-weight: 300;
           width: 15%;
+
+          @media only screen and (max-width: 481px) {
+            width: 20%;
+          }
         }
 
         .pick-food {
@@ -936,6 +1187,10 @@ select {
     justify-content: center;
     max-width: 1366px;
     margin: 0 auto;
+
+    @media only screen and (max-width: 481px) {
+      display: block;
+    }
   }
 
   &__title {
@@ -949,8 +1204,16 @@ select {
   &__plan-chosen {
     width: 40%;
 
+    @media only screen and (max-width: 481px) {
+      width: 100%;
+    }
+
     .plan {
       position: relative;
+
+      @media only screen and (max-width: 481px) {
+        width: 100%;
+      }
     }
 
     .compute {
@@ -959,6 +1222,11 @@ select {
       align-items: center;
       text-align: center;
       padding: 1em 1em 0 0;
+      width: 100%;
+
+      @media only screen and (max-width: 481px) {
+        width: 100%;
+      }
 
       &__desc {
         width: 35%;
@@ -1019,6 +1287,12 @@ select {
     box-shadow: 0px 6px 6px 0px #ccc;
     padding: 3em 0 5em 4em;
 
+    @media only screen and (max-width: 481px) {
+      width: 70%;
+      padding: 3em 2em;
+      margin: 0 auto;
+    }
+
     &__title {
       font-size: 1.438rem;
       color: #0c55a0;
@@ -1038,6 +1312,10 @@ select {
         font-family: "Montserrat", sans-serif;
         font-weight: 300;
         width: 15%;
+
+        @media only screen and (max-width: 481px) {
+          width: 20%;
+        }
       }
 
       .pick-food {
@@ -1058,6 +1336,10 @@ select {
 
   .container_width_50 {
     width: 50%;
+
+    @media only screen and (max-width: 481px) {
+      width: auto;
+    }
   }
 
   .start_plan {
@@ -1067,6 +1349,10 @@ select {
     width: 40%;
     text-align: center;
     align-items: center;
+
+    @media only screen and (max-width: 481px) {
+      width: 60%;
+    }
 
     &__btn {
       background: #0c55a0;
@@ -1090,6 +1376,10 @@ select {
 
   .container_width_50 {
     width: 50%;
+
+    @media only screen and (max-width: 481px) {
+      width: auto;
+    }
   }
 
   .back {
@@ -1104,6 +1394,10 @@ select {
     width: 40%;
     text-align: center;
     align-items: center;
+
+    @media only screen and (max-width: 481px) {
+      width: 100%;
+    }
   }
 }
 
@@ -1135,9 +1429,20 @@ select {
   padding: 4em 0 0 0;
   margin: 0 auto;
 
+  @media only screen and(max-width: 481px) {
+    display: block;
+  }
+
   .qr_code {
     width: 50%;
 
+    @media only screen and(max-width: 481px) {
+      width: 100%;
+    }
+
+    &__img {
+      width: 100%;
+    }
     &__txt {
       font-size: 1.688rem;
       font-family: "Montserrat", sans-serif;
@@ -1214,66 +1519,72 @@ select {
   width: 45%;
   border-radius: 70px;
   text-align: center;
+
+  .desc {
+    padding: 1em 0;
+    font-size: 0.938rem;
+    color: #0c55a0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+  }
+
+  .title {
+    font-size: 2.188rem;
+    color: #0c55a0;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    padding-bottom: 1em;
+  }
+
+  .modal_btn {
+    background: #0c55a0;
+    border-radius: 23px;
+    color: #fff;
+    padding: 15px 60px;
+    border: none;
+    margin: 4em 0 0 0;
+  }
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
 }
 
-.title {
-  font-size: 2.188rem;
-  color: #0c55a0;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  padding-bottom: 1em;
-}
-
-.desc {
-  padding: 1em 0;
-  font-size: 0.938rem;
-  color: #0c55a0;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-}
-
-.modal_btn {
-  background: #0c55a0;
-  border-radius: 23px;
-  color: #fff;
-  padding: 15px 60px;
-  border: none;
-  margin: 4em 0 0 0;
-}
-/* The Close Button */
-.close {
-  color: #aaaaaa;
-  float: right;
-  font-size: 28px;
-  font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-  color: #000;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-//FOOTER
 .footer {
   margin: 7.5625em 0 0 0;
   background: #0c55a0;
   text-align: center;
   padding: 3.5em 0;
-
-  &__txt {
-    font-size: 0.75rem;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-  }
-
-  &__txt2 {
-    padding: 0.5em 0 0 0;
-    font-size: 0.938rem;
-    color: #fff;
-    font-family: "Montserrat", sans-serif;
-    font-weight: 500;
-  }
 }
+
+.footer__txt {
+  font-size: 0.75rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
+}
+
+.footer__txt2 {
+  padding: 0.5em 0 0 0;
+  font-size: 0.938rem;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+}
+<<<<<<< HEAD
+=======
+
+button{
+  cursor: pointer;
+}
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d

@@ -19,6 +19,25 @@ input[type="text"] {
   margin: 1em 0;
 }
 
+@media only screen and (max-width: 1024px) {
+  input[type="text"] {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  input[type="text"] {
+    padding: 10px;
+    margin: 0.5em;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  input[type="text"] {
+    width: 90%;
+  }
+}
+
 .slick-slide img {
   display: initial !important;
   text-align: center;
@@ -43,6 +62,34 @@ select {
   color: #b2b1b1;
   text-align: center;
   cursor: pointer !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  select {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  select {
+    padding: 20px;
+    margin: 0.5em;
+    width: 85%;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  select {
+    width: 97%;
+  }
+}
+
+.slick-prev {
+  display: none !important;
+}
+
+.slick-next {
+  display: none !important;
 }
 
 .promo_code {
@@ -76,8 +123,26 @@ select {
   padding: 1em 0;
 }
 
+@media only screen and (max-width: 481px) {
+  .section_1 {
+    display: block;
+  }
+}
+
 .section_1__logo {
   width: 80%;
+}
+
+@media only screen and (max-width: 768px) {
+  .section_1__logo {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .section_1__logo {
+    width: 40%;
+  }
 }
 
 .section_1__list {
@@ -93,6 +158,27 @@ select {
           align-items: center;
 }
 
+@media only screen and (max-width: 1024px) {
+  .section_1__list {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section_1__list {
+    width: 100%;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .section_1__list {
+    display: none;
+  }
+}
+
 .section_1__step-1 {
   width: 25%;
   display: -webkit-box;
@@ -106,12 +192,28 @@ select {
           align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .section_1__step-1 {
+    width: 20%;
+    padding: 10px;
+  }
+}
+
 .section_1__step-1 .step-1 {
   font-size: 0.83rem;
   font-family: "Montserrat", sans-serif;
   color: #0c55a0;
   font-weight: 600;
   padding-left: 26px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section_1__step-1 .step-1 {
+    text-align: left;
+    padding-left: 10px;
+    width: 15%;
+    font-size: 0.73rem;
+  }
 }
 
 .section_1__step-2 {
@@ -127,12 +229,28 @@ select {
           align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .section_1__step-2 {
+    width: 20%;
+    padding: 10px;
+  }
+}
+
 .section_1__step-2 .step-2 {
   font-size: 0.83rem;
   font-family: "Montserrat", sans-serif;
   color: #d2d3d5;
   font-weight: 600;
   padding-left: 26px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section_1__step-2 .step-2 {
+    text-align: left;
+    padding-left: 10px;
+    width: 15%;
+    font-size: 0.73rem;
+  }
 }
 
 .section_1__step-3 {
@@ -148,12 +266,28 @@ select {
           align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .section_1__step-3 {
+    width: 20%;
+    padding: 10px;
+  }
+}
+
 .section_1__step-3 .step-3 {
   font-size: 0.83rem;
   font-family: "Montserrat", sans-serif;
   color: #d2d3d5;
   font-weight: 600;
   padding-left: 26px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section_1__step-3 .step-3 {
+    text-align: left;
+    padding-left: 10px;
+    width: 15%;
+    font-size: 0.73rem;
+  }
 }
 
 .section_1__step-4 {
@@ -169,12 +303,28 @@ select {
           align-items: center;
 }
 
+@media only screen and (max-width: 768px) {
+  .section_1__step-4 {
+    width: 20%;
+    padding: 10px;
+  }
+}
+
 .section_1__step-4 .step-4 {
   font-size: 0.83rem;
   font-family: "Montserrat", sans-serif;
   color: #d2d3d5;
   font-weight: 600;
   padding-left: 26px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section_1__step-4 .step-4 {
+    text-align: left;
+    padding-left: 10px;
+    width: 15%;
+    font-size: 0.73rem;
+  }
 }
 
 .section_2 {
@@ -189,6 +339,18 @@ select {
   padding: 3em 0;
 }
 
+@media only screen and (max-width: 768px) {
+  .section_2__title {
+    font-size: 2rem;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .section_2__title {
+    padding: 1em;
+  }
+}
+
 .section_2__col {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -199,15 +361,66 @@ select {
   justify-content: center;
   margin: 0 auto;
   max-width: 1366px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media only screen and (max-width: 481px) {
+  .section_2__col {
+    display: block;
+    width: 100%;
+  }
 }
 
 .section_2__col__col-1 {
-  width: 50%;
+  width: 60%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .section_2__col__col-1 {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section_2__col__col-1 {
+    width: 70%;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .section_2__col__col-1 {
+    width: 100%;
+  }
+}
+
+.section_2__col__col-1 .kalorie {
+  width: 90%;
+}
+
+@media only screen and (max-width: 768px) {
+  .section_2__col__col-1 .kalorie {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 481px) {
+  .section_2__col__col-1 .kalorie {
+    width: 80%;
+  }
 }
 
 .section_2__col__col-2 {
   width: 50%;
   text-align: left;
+}
+
+@media only screen and (max-width: 481px) {
+  .section_2__col__col-2 {
+    width: 85%;
+    padding: 20px;
+  }
 }
 
 .section_2__col__col-2__label {
@@ -259,7 +472,7 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 2.3125em 0;
+  padding: 1em 0;
 }
 
 .steps__list {
@@ -371,11 +584,23 @@ select {
   padding: 3em 0 0.5em 0;
 }
 
+@media only screen and (max-width: 481px) {
+  .step_2__title {
+    font-size: 2rem;
+  }
+}
+
 .step_2__sel {
   font-size: 1rem;
   font-family: "Montserrat", sans-serif;
   color: #0c55a0;
   font-weight: 600;
+}
+
+@media only screen and (max-width: 481px) {
+  .step_2__sel {
+    padding: 10px;
+  }
 }
 
 .choose_plan {
@@ -385,6 +610,9 @@ select {
   margin: 0 auto;
   width: 75%;
   padding: 5em 0 3em 0;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .choose_plan .plan_1 {
@@ -394,6 +622,18 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .choose_plan .plan_1 {
+    width: auto;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .choose_plan .plan_1 {
+    width: auto;
+  }
 }
 
 .choose_plan .plan_1__tl_50 {
@@ -544,10 +784,22 @@ select {
           justify-content: center;
 }
 
+@media only screen and (max-width: 481px) {
+  .week {
+    display: block;
+  }
+}
+
 .week__plan {
   width: 50%;
   text-align: center;
   position: relative !important;
+}
+
+@media only screen and (max-width: 481px) {
+  .week__plan {
+    width: 100%;
+  }
 }
 
 .week__plan .tl_50 {
@@ -561,14 +813,22 @@ select {
   display: block;
 }
 
-.week__title {
+.week__plan .tl_50 .title {
   color: #0c55a0;
   font-family: "Montserrat", sans-serif;
   font-size: 2.188rem;
   font-weight: 600;
 }
 
-.week__desc {
+.week__plan .tl_50 .desc {
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
+  font-weight: 600;
+  padding: 1.5em 0 0.5em 0;
+}
+
+.week__plan .tl_50 .desc-2 {
   color: #0c55a0;
   font-family: "Montserrat", sans-serif;
   font-size: 0.813rem;
@@ -576,17 +836,17 @@ select {
   padding: 0.5em 0;
 }
 
-.week__desc2 {
-  color: #0c55a0;
-  font-family: "Montserrat", sans-serif;
-  font-size: 0.813rem;
-  font-weight: 600;
-  padding: 1em 0;
-}
-
 .week__calendar {
   width: 50%;
   text-align: left;
+}
+
+@media only screen and (max-width: 481px) {
+  .week__calendar {
+    width: 80%;
+    padding: 30px;
+    margin: 0 auto;
+  }
 }
 
 .week__calendar .start_date {
@@ -613,7 +873,7 @@ select {
   color: #0c55a0;
   font-family: "Montserrat", sans-serif;
   font-weight: 600;
-  padding: 3em 0 0 0;
+  padding: 3em 0 1em 0;
 }
 
 .choosing_food__foods {
@@ -681,9 +941,21 @@ select {
   padding: 4em 0 0 0;
 }
 
+@media only screen and (max-width: 481px) {
+  .choosing_food .sched__plan-sched {
+    display: block;
+  }
+}
+
 .choosing_food .sched__plan-sched .plan_chosen {
   width: 40%;
   position: relative !important;
+}
+
+@media only screen and (max-width: 481px) {
+  .choosing_food .sched__plan-sched .plan_chosen {
+    width: 100%;
+  }
 }
 
 .choosing_food .sched__plan-sched .plan_chosen .tl_50 {
@@ -697,6 +969,12 @@ select {
   display: block;
 }
 
+@media only screen and (max-width: 481px) {
+  .choosing_food .sched__plan-sched .plan_chosen .tl_50 {
+    top: 50%;
+  }
+}
+
 .choosing_food .sched__plan-sched .plan_chosen .tl_50 .title {
   font-size: 2.188rem;
   color: #0c55a0;
@@ -705,19 +983,20 @@ select {
 }
 
 .choosing_food .sched__plan-sched .plan_chosen .tl_50 .desc {
-  font-size: 0.813rem;
   color: #0c55a0;
   font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
   font-weight: 600;
+  padding: 1.5em 0 0.5em 0;
 }
 
-.choosing_food .sched__plan-sched .plan_chosen .tl_50 .desc2 {
+.choosing_food .sched__plan-sched .plan_chosen .tl_50 .desc-2 {
   font-size: 0.625rem;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   font-style: italic;
   color: #0c55a0;
-  padding: 3em 0;
+  padding: 0.5em 0;
 }
 
 .choosing_food .sched__plan-sched .plan_week {
@@ -726,6 +1005,13 @@ select {
   -webkit-box-shadow: 0px 6px 6px 0px #ccc;
           box-shadow: 0px 6px 6px 0px #ccc;
   padding: 3em 0 0 0;
+}
+
+@media only screen and (max-width: 481px) {
+  .choosing_food .sched__plan-sched .plan_week {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 
 .choosing_food .sched__plan-sched .plan_week .title {
@@ -758,6 +1044,12 @@ select {
 
 .choosing_food .sched__plan-sched .plan_week .date-2 .input {
   width: 50%;
+}
+
+@media only screen and (max-width: 481px) {
+  .choosing_food .sched__plan-sched .plan_week .date-2 .input {
+    width: 60%;
+  }
 }
 
 .choosing_food .sched .checkout {
@@ -961,6 +1253,12 @@ select {
   padding: 3em 0;
 }
 
+@media only screen and (max-width: 481px) {
+  .check_food__title {
+    padding: 3em 1em;
+  }
+}
+
 .check_food .plan_sched {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -969,17 +1267,30 @@ select {
       -ms-flex-pack: center;
           justify-content: center;
   max-width: 1366px;
+  margin: 0 auto;
+}
+
+@media only screen and (max-width: 481px) {
+  .check_food .plan_sched {
+    display: block;
+  }
 }
 
 .check_food .plan_sched__plan-chosen {
   width: 40%;
 }
 
+@media only screen and (max-width: 481px) {
+  .check_food .plan_sched__plan-chosen {
+    width: 100%;
+  }
+}
+
 .check_food .plan_sched__plan-chosen .plan {
   position: relative;
 }
 
-.check_food .plan_sched__plan-chosen .tl_50 {
+.check_food .plan_sched__plan-chosen .plan .tl_50 {
   position: absolute !important;
   top: 50%;
   left: 50%;
@@ -990,12 +1301,44 @@ select {
   display: block;
 }
 
+.check_food .plan_sched__plan-chosen .plan .title {
+  font-size: 2.188rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+}
+
+.check_food .plan_sched__plan-chosen .plan .desc {
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.813rem;
+  font-weight: 600;
+  padding: 1.5em 0 0.5em 0;
+}
+
+.check_food .plan_sched__plan-chosen .plan .desc-2 {
+  font-size: 0.625rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  color: #0c55a0;
+  padding: 0.5em 0;
+}
+
 .check_food .plan_sched__week-chosen {
   width: 40%;
   border-radius: 42px;
   -webkit-box-shadow: 0px 6px 6px 0px #ccc;
           box-shadow: 0px 6px 6px 0px #ccc;
   padding: 3em 0 5em 4em;
+}
+
+@media only screen and (max-width: 481px) {
+  .check_food .plan_sched__week-chosen {
+    width: 70%;
+    padding: 3em 2em;
+    margin: 0 auto;
+  }
 }
 
 .check_food .plan_sched__week-chosen__title {
@@ -1022,6 +1365,12 @@ select {
   font-family: "Montserrat", sans-serif;
   font-weight: 300;
   width: 15%;
+}
+
+@media only screen and (max-width: 481px) {
+  .check_food .plan_sched__week-chosen__date-pick .date-pick_day {
+    width: 20%;
+  }
 }
 
 .check_food .plan_sched__week-chosen__date-pick .pick-food {
@@ -1058,6 +1407,12 @@ select {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 481px) {
+  .check_choices .choice {
+    display: block;
+  }
+}
+
 .check_choices__title {
   font-size: 2.188rem;
   color: #0c55a0;
@@ -1070,8 +1425,20 @@ select {
   width: 40%;
 }
 
+@media only screen and (max-width: 481px) {
+  .check_choices__plan-chosen {
+    width: 100%;
+  }
+}
+
 .check_choices__plan-chosen .plan {
   position: relative;
+}
+
+@media only screen and (max-width: 481px) {
+  .check_choices__plan-chosen .plan {
+    width: 100%;
+  }
 }
 
 .check_choices__plan-chosen .compute {
@@ -1086,6 +1453,13 @@ select {
           align-items: center;
   text-align: center;
   padding: 1em 1em 0 0;
+  width: 100%;
+}
+
+@media only screen and (max-width: 481px) {
+  .check_choices__plan-chosen .compute {
+    width: 100%;
+  }
 }
 
 .check_choices__plan-chosen .compute__desc {
@@ -1146,6 +1520,14 @@ select {
   padding: 3em 0 5em 4em;
 }
 
+@media only screen and (max-width: 481px) {
+  .check_choices__week-chosen {
+    width: 70%;
+    padding: 3em 2em;
+    margin: 0 auto;
+  }
+}
+
 .check_choices__week-chosen__title {
   font-size: 1.438rem;
   color: #0c55a0;
@@ -1172,6 +1554,12 @@ select {
   width: 15%;
 }
 
+@media only screen and (max-width: 481px) {
+  .check_choices__week-chosen__date-pick .date-pick_day {
+    width: 20%;
+  }
+}
+
 .check_choices__week-chosen__date-pick .pick-food {
   font-size: 1.063rem;
   color: #0c55a0;
@@ -1196,6 +1584,12 @@ select {
   width: 50%;
 }
 
+@media only screen and (max-width: 481px) {
+  .container .container_width_50 {
+    width: auto;
+  }
+}
+
 .container .start_plan {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1209,6 +1603,12 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 481px) {
+  .container .start_plan {
+    width: 60%;
+  }
 }
 
 .container .start_plan__btn {
@@ -1240,6 +1640,12 @@ select {
   width: 50%;
 }
 
+@media only screen and (max-width: 481px) {
+  .back-container .container_width_50 {
+    width: auto;
+  }
+}
+
 .back-container .back {
   font-size: 1.063rem;
   font-family: "Montserrat", sans-serif;
@@ -1258,6 +1664,12 @@ select {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 481px) {
+  .back-container .back {
+    width: 100%;
+  }
 }
 
 .checkout {
@@ -1290,8 +1702,24 @@ select {
   margin: 0 auto;
 }
 
+@media only screen and (max-width: 481px) {
+  .content {
+    display: block;
+  }
+}
+
 .content .qr_code {
   width: 50%;
+}
+
+@media only screen and (max-width: 481px) {
+  .content .qr_code {
+    width: 100%;
+  }
+}
+
+.content .qr_code__img {
+  width: 100%;
 }
 
 .content .qr_code__txt {
@@ -1374,17 +1802,10 @@ select {
   width: 45%;
   border-radius: 70px;
   text-align: center;
+  /* The Close Button */
 }
 
-.title {
-  font-size: 2.188rem;
-  color: #0c55a0;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
-  padding-bottom: 1em;
-}
-
-.desc {
+.modal-content .desc {
   padding: 1em 0;
   font-size: 0.938rem;
   color: #0c55a0;
@@ -1392,7 +1813,15 @@ select {
   font-weight: 400;
 }
 
-.modal_btn {
+.modal-content .title {
+  font-size: 2.188rem;
+  color: #0c55a0;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  padding-bottom: 1em;
+}
+
+.modal-content .modal_btn {
   background: #0c55a0;
   border-radius: 23px;
   color: #fff;
@@ -1401,16 +1830,15 @@ select {
   margin: 4em 0 0 0;
 }
 
-/* The Close Button */
-.close {
+.modal-content .close {
   color: #aaaaaa;
   float: right;
   font-size: 28px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
+.modal-content .close:hover,
+.modal-content .close:focus {
   color: #000;
   text-decoration: none;
   cursor: pointer;
@@ -1437,4 +1865,11 @@ select {
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
 }
+<<<<<<< HEAD
+=======
+
+button {
+  cursor: pointer;
+}
+>>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
 /*# sourceMappingURL=style.css.map */
