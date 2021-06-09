@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
@@ -25,38 +25,38 @@
   </div>
 
   <div class="section_1">
-        <a href="">
-            <img class="section_1__logo" src="/assets/img/logo.png" alt="" />
-        </a>
+    <a href="<?php echo esc_url(home_url('/')); ?>">
+      <img class="section_1__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" />
+    </a>
 
-        <ul class="section_1__list">
-            <li class="section_1__step-1">
-                <img src="/assets/img/step-1_grayed.png" alt="" />
-                <p class="step-1" style="color: #d2d3d5;">LET’S START</p>
-            </li>
-            <li class="step-dot">
-                <img src="/assets/img/dot.png" alt="" />
-            </li>
-            <li class="section_1__step-2">
-                <img src="/assets/img/step-2_colored.png" alt="" />
-                <p class="step-2" style="color:#0c55a0 ;">SELECT PLAN</p>
-            </li>
-            <li class="step-dot">
-                <img src="/assets/img/dot.png" alt="" />
-            </li>
-            <li class="section_1__step-3">
-                <img src="/assets/img/step-3.png" alt="" />
-                <p class="step-3">SELECT ITEMS</p>
-            </li>
-            <li class="step-dot">
-                <img src="/assets/img/dot.png" alt="" />
-            </li>
-            <li class="section_1__step-4">
-                <img src="/assets/img/step-4.png" alt="" />
-                <p class="step-4">CHECKOUT</p>
-            </li>
-        </ul>
-    </div>
+    <ul class="section_1__list">
+      <li class="section_1__step-1">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-1_grayed.png" alt="" />
+        <p class="step-1" style="color: #d2d3d5;">LET’S START</p>
+      </li>
+      <li class="step-dot">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
+      </li>
+      <li class="section_1__step-2">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-2_colored.png" alt="" />
+        <p class="step-2" style="color:#0c55a0 ;">SELECT PLAN</p>
+      </li>
+      <li class="step-dot">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
+      </li>
+      <li class="section_1__step-3">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-3.png" alt="" />
+        <p class="step-3">SELECT ITEMS</p>
+      </li>
+      <li class="step-dot">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
+      </li>
+      <li class="section_1__step-4">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-4.png" alt="" />
+        <p class="step-4">CHECKOUT</p>
+      </li>
+    </ul>
+  </div>
   <!-- Confirm Order -->
   <div class="check_choices">
     <h2 class="check_choices__title">CHECK YOUR CHOICES</h2>
@@ -266,7 +266,7 @@
 
       <div class="check_choices__plan-chosen">
         <div class="plan">
-          <img src="/assets/img/box_3.png" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box_3.png" alt="">
           <div class="tl_50">
             <p class="tl_50__title plan_title">
 
@@ -412,7 +412,7 @@
 
     })()
 
-    function goToCheckout(){
+    function goToCheckout() {
       window.location = 'http://localhost:3000/page-checkout.php';
     }
   </script>

@@ -6,13 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-<<<<<<< HEAD
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
-=======
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/reset.css">
->>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
 </head>
 
 <body>
@@ -23,18 +18,12 @@
     </div>
 
     <div class="section_1">
-<<<<<<< HEAD
         <a href="<?php echo esc_url(home_url('/')); ?>">
             <img class="section_1__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" />
-=======
-        <a href="">
-            <img class="section_1__logo" src="/assets/img/logo.png" alt="" />
->>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
         </a>
 
         <ul class="section_1__list">
             <li class="section_1__step-1">
-<<<<<<< HEAD
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-1_grayed.png" alt="" />
                 <p class="step-1" style="color: #d2d3d5;">LET’S START</p>
             </li>
@@ -57,30 +46,6 @@
             </li>
             <li class="section_1__step-4">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-4.png" alt="" />
-=======
-                <img src="/assets/img/step-1_grayed.png" alt="" />
-                <p class="step-1" style="color: #d2d3d5;">LET’S START</p>
-            </li>
-            <li class="step-dot">
-                <img src="/assets/img/dot.png" alt="" />
-            </li>
-            <li class="section_1__step-2">
-                <img src="/assets/img/step-2_colored.png" alt="" />
-                <p class="step-2" style="color:#0c55a0 ;">SELECT PLAN</p>
-            </li>
-            <li class="step-dot">
-                <img src="/assets/img/dot.png" alt="" />
-            </li>
-            <li class="section_1__step-3">
-                <img src="/assets/img/step-3.png" alt="" />
-                <p class="step-3">SELECT ITEMS</p>
-            </li>
-            <li class="step-dot">
-                <img src="/assets/img/dot.png" alt="" />
-            </li>
-            <li class="section_1__step-4">
-                <img src="/assets/img/step-4.png" alt="" />
->>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
                 <p class="step-4">CHECKOUT</p>
             </li>
         </ul>
@@ -95,28 +60,17 @@
 
         <div class="content">
             <div class="qr_code">
-<<<<<<< HEAD
                 <img class="qr_code__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/qr.png" alt="">
-=======
-                <img class="qr_code__img" src="/assets/img/qr.png" alt="">
->>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
                 <p class="qr_code__txt">+ 63 967 019 5897</p>
                 <p class="qr_code__acc">ACCOUNT NUMBER</p>
             </div>
 
             <div class="check_choices__plan-chosen">
                 <div class="plan">
-<<<<<<< HEAD
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
-                    <div class="tl_50">
-                        <p class="tl_50__title">
-                            MICRO
-=======
-                    <img src="/assets/img/box.png" alt="">
                     <div class="tl_50">
                         <p class="tl_50__title plan_title">
 
->>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
                         </p>
                         <p class="tl_50__desc">Three Week Meal Plan</p>
                         <p class="tl_50__desc2">Php 5,400 </p>
@@ -125,11 +79,7 @@
 
                 <div class="compute">
                     <p class="compute__desc">Subtotal:</p>
-<<<<<<< HEAD
-                    <p class="compute__price">₱ 5,500.00</p>
-=======
                     <p id='subtotal_price' class="compute__price">₱ 5,500.00</p>
->>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
                 </div>
 
                 <div class="compute">
@@ -144,11 +94,7 @@
                 <hr>
                 <div class="compute">
                     <p class="compute__desc" style="font-size: 1.313rem; font-weight: 600;">Total</p>
-<<<<<<< HEAD
-                    <p class="compute__price" style="font-size: 1.25rem; font-weight: 600;">₱ 5,500.00</p>
-=======
                     <p id='total_price' class="compute__price" style="font-size: 1.25rem; font-weight: 600;">₱ 5,500.00</p>
->>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
                 </div>
 
                 <p class="notice">Once we receive the payment, <br>
@@ -192,12 +138,6 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {
-<<<<<<< HEAD
-            emailjs.init("user_1aX0fAWdjCJgtNQEYzWaF");
-        })();
-    </script>
-    <script>
-=======
             emailjs.init("user_OuoAcJflVsGtmUVmKDLNz");
         })();
     </script>
@@ -210,30 +150,29 @@
         const total_price = document.querySelector('#total_price')
 
         switch (localStorage.getItem('plan')) {
-        case 'nano':
-          tl_50__desc.innerHTML = 'One Week Trial Plan'
-          tl_50__desc2.innerHTML = '₱ 1,499'
-          subtotal_price.innerHTML = '₱ 1,499'
-          total_price.innerHTML = '₱ 1,499'
-          break;
-        case 'micro':
-          tl_50__desc.innerHTML = 'Two Week Plan'
-          tl_50__desc2.innerHTML = '₱ 2,998'
-          subtotal_price.innerHTML = '₱ 2,998'
-          total_price.innerHTML = '₱ 2,998'
-          break;
-        case 'mega':
-          tl_50__desc.innerHTML = 'Three Week Plan'
-          tl_50__desc2.innerHTML = '₱ 4,500'
-          subtotal_price.innerHTML = '₱ 4,500'
-          total_price.innerHTML = '₱ 4,500'
-          break;
+            case 'nano':
+                tl_50__desc.innerHTML = 'One Week Trial Plan'
+                tl_50__desc2.innerHTML = '₱ 1,499'
+                subtotal_price.innerHTML = '₱ 1,499'
+                total_price.innerHTML = '₱ 1,499'
+                break;
+            case 'micro':
+                tl_50__desc.innerHTML = 'Two Week Plan'
+                tl_50__desc2.innerHTML = '₱ 2,998'
+                subtotal_price.innerHTML = '₱ 2,998'
+                total_price.innerHTML = '₱ 2,998'
+                break;
+            case 'mega':
+                tl_50__desc.innerHTML = 'Three Week Plan'
+                tl_50__desc2.innerHTML = '₱ 4,500'
+                subtotal_price.innerHTML = '₱ 4,500'
+                total_price.innerHTML = '₱ 4,500'
+                break;
 
-        default:
-          break;
-      }
+            default:
+                break;
+        }
 
->>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
         // Get the modal
         var modal = document.getElementById("myModal");
 
@@ -250,17 +189,10 @@
         }
 
         function confirmOrder() {
-<<<<<<< HEAD
-            const serviceID = 'service_nv201jq';
-            const templateID = 'template_f8b2wye';
-            // company email on from_name
-            const from_name = 'ejessa0506@gmail.com'
-=======
             const serviceID = 'service_e4ti7a9';
             const templateID = 'template_cbu7u1e';
             // company email on from_name
             const from_name = 'yogurtcultureph@gmail.com'
->>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
             // reply_to the user email
             const reply_to = localStorage.getItem('email')
 
@@ -272,18 +204,6 @@
             const landmark = localStorage.getItem('landmark');
             const email = localStorage.getItem('email');
             const mobile = localStorage.getItem('mobile');
-<<<<<<< HEAD
-            const nanoFoodSelected = [
-                localStorage.getItem('nano_monday'),
-                localStorage.getItem('nano_tuesday'),
-                localStorage.getItem('nano_wednesday'),
-                localStorage.getItem('nano_thursday'),
-                localStorage.getItem('nano_friday'),
-                localStorage.getItem('nano_saturday'),
-            ];
-            const myHtml = `
-            <div id="sum_nano" hidden>
-=======
             const foodSelection = JSON.parse(localStorage.getItem('food_selection'))
 
             let week_one;
@@ -378,23 +298,12 @@
             console.log(merged_week)
             const myHtml = `
             <div >
->>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
                 <h1>Check Details:</h1>
                 Plan: <h2 >${plan}</h2>
                 date: <h2 >${date}</h2>
                 time: <h2>${time}</h2>
                 total: <h2>Php 1,000</h2>
-<<<<<<< HEAD
-                <label>Week 1</label>
-                <h2>${nanoFoodSelected[0]}</h2>
-                <h2>${nanoFoodSelected[1]}</h2>
-                <h2>${nanoFoodSelected[2]}</h2>
-                <h2>${nanoFoodSelected[3]}</h2>
-                <h2>${nanoFoodSelected[4]}</h2>
-                <h2>${nanoFoodSelected[5]}</h2>
-=======
                ${merged_week}
->>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
             </div>
             `;
 
@@ -412,18 +321,12 @@
                 reply_to: reply_to,
             };
 
-<<<<<<< HEAD
-            emailjs.send(serviceID, templateID, templateParams).then(
-                function(response) {
-                    alert('Order Sent' + response.status + response.text);
-=======
             console.log(templateParams)
             emailjs.send(serviceID, templateID, templateParams).then(
                 function(response) {
                     alert('Order Sent' + response.status + response.text);
                     localStorage.clear();
                     window.location = 'front-page.php'
->>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
                     location.reload();
                 },
                 function(error) {
@@ -446,11 +349,8 @@
             }
         }
 
-<<<<<<< HEAD
-=======
 
 
->>>>>>> 611be977d5fd7b5b4ad3652ad70a8cd24072805d
         function backToHome() {
             window.location = 'index.html'
         }
