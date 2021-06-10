@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Yogurt Culture</title>
-  <link rel="stylesheet" href="/assets/css/style.css">
-  <link rel="stylesheet" href="/assets/css/reset.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <style>
@@ -23,7 +23,6 @@
       align-items: stretch;
       align-content: stretch;
     }
-
   </style>
 </head>
 
@@ -35,64 +34,64 @@
   </div>
 
   <div class="section_1">
-        <a href="">
-            <img class="section_1__logo" src="/assets/img/logo.png" alt="" />
-        </a>
+    <a href="">
+      <img class="section_1__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" />
+    </a>
 
-        <ul class="section_1__list">
-            <li class="section_1__step-1">
-                <img src="/assets/img/step-1_grayed.png" alt="" />
-                <p class="step-1" style="color: #d2d3d5;">LET’S START</p>
-            </li>
-            <li class="step-dot">
-                <img src="/assets/img/dot.png" alt="" />
-            </li>
-            <li class="section_1__step-2">
-                <img src="/assets/img/step-2_colored.png" alt="" />
-                <p class="step-2" style="color:#0c55a0 ;">SELECT PLAN</p>
-            </li>
-            <li class="step-dot">
-                <img src="/assets/img/dot.png" alt="" />
-            </li>
-            <li class="section_1__step-3">
-                <img src="/assets/img/step-3.png" alt="" />
-                <p class="step-3">SELECT ITEMS</p>
-            </li>
-            <li class="step-dot">
-                <img src="/assets/img/dot.png" alt="" />
-            </li>
-            <li class="section_1__step-4">
-                <img src="/assets/img/step-4.png" alt="" />
-                <p class="step-4">CHECKOUT</p>
-            </li>
-        </ul>
-    </div>
+    <ul class="section_1__list">
+      <li class="section_1__step-1">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-1_grayed.png" alt="" />
+        <p class="step-1" style="color: #d2d3d5;">LET’S START</p>
+      </li>
+      <li class="step-dot">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
+      </li>
+      <li class="section_1__step-2">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-2_colored.png" alt="" />
+        <p class="step-2" style="color:#0c55a0 ;">SELECT PLAN</p>
+      </li>
+      <li class="step-dot">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
+      </li>
+      <li class="section_1__step-3">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-3.png" alt="" />
+        <p class="step-3">SELECT ITEMS</p>
+      </li>
+      <li class="step-dot">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
+      </li>
+      <li class="section_1__step-4">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-4.png" alt="" />
+        <p class="step-4">CHECKOUT</p>
+      </li>
+    </ul>
+  </div>
 
   <!-- CHOOSE FOOD -->
   <div class="choosing_food">
     <h2 class="choosing_food__title">CHOOSE YOUR FOOD</h2>
-    
+
     <div class="choosing_food__foods slider">
       <div class="choosing_food__foods__item">
-        <img src="/assets/img/Salad with Names-01.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-01.jpg" alt="">
       </div>
       <div class="choosing_food__foods__item">
-        <img src="/assets/img/Salad with Names-02.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-02.jpg" alt="">
       </div>
       <div class="choosing_food__foods__item">
-        <img src="/assets/img/Salad with Names-03.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-03.jpg" alt="">
       </div>
       <div class="choosing_food__foods__item">
-        <img src="/assets/img/Salad with Names-04.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-04.jpg" alt="">
       </div>
       <div class="choosing_food__foods__item">
-        <img src="/assets/img/Salad with Names-05.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-05.jpg" alt="">
       </div>
       <div class="choosing_food__foods__item">
-        <img src="/assets/img/Salad with Names-06.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-06.jpg" alt="">
       </div>
       <div class="choosing_food__foods__item">
-        <img src="/assets/img/Salad with Names-07.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-07.jpg" alt="">
       </div>
     </div>
 
@@ -100,7 +99,7 @@
       <!-- NANO -->
       <section id="nano">
         <div class="sched__filter">
-          <img src="/assets/img/filter.svg" alt="">
+          <img src="<?php echo get_template_directory_uri(); ?>/assets/img/filter.svg" alt="">
           <p class="filter_text">Filter</p>
           <input type="text" style="width: 20%;">
         </div>
@@ -171,7 +170,7 @@
 
           <div class="choose_plan center_plan">
             <div class="plan_1">
-              <img src="/assets/img/box.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
               <div class="plan_1__tl_50">
                 <p class="plan_1__title">
                   MICRO
@@ -274,7 +273,7 @@
 
           <div class="choose_plan center_plan">
             <div class="plan_2">
-              <img src="/assets/img/box.png" alt="">
+              <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
               <div class="plan_1__tl_50">
                 <p class="plan_1__title">
                   MEGA
@@ -442,7 +441,7 @@
             CHECKOUT
           </button>
         </a>
-        <a href="http://localhost:3000/step2.php">
+        <a href="http://wordpress.test/step2">
           <p class="back">BACK</p>
         </a>
       </div>
@@ -686,11 +685,11 @@
         });
       })
 
-      localStorage.setItem('food_selection',JSON.stringify(selectedFood))
+      localStorage.setItem('food_selection', JSON.stringify(selectedFood))
       redirect()
     }
 
-    function redirect(){
+    function redirect() {
       window.location = 'http://localhost:3000/step4.php';
     }
   </script>

@@ -6,8 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yogurt Culture</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <link rel="stylesheet" href="/assets/css/reset.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
 </head>
 
 <body>
@@ -24,28 +24,28 @@
 
         <ul class="section_1__list">
             <li class="section_1__step-1">
-                <img src="/assets/img/step-1_grayed.png" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-1_grayed.png" alt="" />
                 <p class="step-1" style="color: #d2d3d5;">LET’S START</p>
             </li>
             <li class="step-dot">
-                <img src="/assets/img/dot.png" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
             </li>
             <li class="section_1__step-2">
-                <img src="/assets/img/step-2_colored.png" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-2_colored.png" alt="" />
                 <p class="step-2" style="color:#0c55a0 ;">SELECT PLAN</p>
             </li>
             <li class="step-dot">
-                <img src="/assets/img/dot.png" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
             </li>
             <li class="section_1__step-3">
-                <img src="/assets/img/step-3.png" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-3.png" alt="" />
                 <p class="step-3">SELECT ITEMS</p>
             </li>
             <li class="step-dot">
-                <img src="/assets/img/dot.png" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/dot.png" alt="" />
             </li>
             <li class="section_1__step-4">
-                <img src="/assets/img/step-4.png" alt="" />
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-4.png" alt="" />
                 <p class="step-4">CHECKOUT</p>
             </li>
         </ul>
@@ -67,7 +67,7 @@
 
             <div class="check_choices__plan-chosen">
                 <div class="plan">
-                    <img src="/assets/img/box.png" alt="">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/box.png" alt="">
                     <div class="tl_50">
                         <p class="tl_50__title plan_title">
 
