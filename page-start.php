@@ -5,7 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<<<<<<< HEAD:page-start.php
     <title>Document</title>
+=======
+    <title>Yogurt Culture</title>
+>>>>>>> c56f933f9178eccd56fb6a238f41f1367a66074f:front-page.php
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css" />
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css" />
 </head>
@@ -19,7 +23,11 @@
     </div>
 
     <div class="section_1">
+<<<<<<< HEAD:page-start.php
         <a href="<?php echo esc_url(home_url('/')); ?>">
+=======
+        <a href="">
+>>>>>>> c56f933f9178eccd56fb6a238f41f1367a66074f:front-page.php
             <img class="section_1__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" />
         </a>
 
@@ -123,7 +131,7 @@
             localStorage.setItem('email', email);
             localStorage.setItem('mobile', mobile_number);
 
-            window.location = 'http://wordpress.test/steps';
+            window.location = 'http://wordpress.test/step1';
             console.log([
                 fullname,
                 address,

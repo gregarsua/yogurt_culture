@@ -5,7 +5,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<<<<<<< HEAD
     <title>Document</title>
+=======
+    <title>Yogurt Culture</title>
+>>>>>>> c56f933f9178eccd56fb6a238f41f1367a66074f
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
 </head>
@@ -104,7 +108,9 @@
 
                 <div class="start_plan">
                     <button class="start_plan__btn" id="myBtn">DOWNLOAD QR</button><br>
-                    <p class="back">BACK</p>
+                    <a href="http://localhost:3000/step5.php">
+                        <p class="back">BACK</p>
+                    </a>
                 </div>
             </div>
         </div>
@@ -125,7 +131,7 @@
             <p class="desc">Once we receive the payment, we will immediately <br>
                 contact you to confirm the payment</p>
 
-            <button class="modal_btn">Back to Home</button>
+            <button class="modal_btn" onclick="backToHome()">Back to Home</button>
         </div>
 
     </div>
@@ -348,8 +354,6 @@
                 modal.style.display = "none";
             }
         }
-
-
 
         function backToHome() {
             window.location = 'index.html'
