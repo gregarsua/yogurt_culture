@@ -34,7 +34,7 @@
   </div>
 
   <div class="section_1">
-    <a href="">
+    <a href="<?php echo esc_url(home_url('Start')); ?>">
       <img class="section_1__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" />
     </a>
 
