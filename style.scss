@@ -467,6 +467,7 @@ select {
   width: 75%;
   padding: 5em 0 3em 0;
   justify-content: center;
+  max-width: 1200px;
 
   .plan_1 {
     width: 33%;
@@ -719,6 +720,8 @@ select {
 
   &__foods {
     display: flex;
+    max-width: 1366px;
+    margin: 0 auto;
 
     &__item {
       width: 25%;
@@ -1582,10 +1585,10 @@ select {
   font-weight: 500;
 }
 
-button{
+button {
   cursor: pointer;
 }
 
-a{
+a {
   text-decoration: none;
 }

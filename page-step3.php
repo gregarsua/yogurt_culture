@@ -73,26 +73,47 @@
 
     <div class="choosing_food__foods slider">
       <div class="choosing_food__foods__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-01.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/1st_img.png" alt="">
+        <p class="choosing_food__foods__title">Mango Yogurt </p>
+        <p class="choosing_food__foods__desc">Vietnamese Yogurt mixed<br>
+          with ripe mango jam</p>
       </div>
       <div class="choosing_food__foods__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-02.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/2nd_img.png" alt="">
+        <p class="choosing_food__foods__title">Mango Yogurt </p>
+        <p class="choosing_food__foods__desc">Vietnamese Yogurt mixed<br>
+          with ripe mango jam</p>
       </div>
       <div class="choosing_food__foods__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-03.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/3rd_img.png" alt="">
+        <p class="choosing_food__foods__title">Mango Yogurt </p>
+        <p class="choosing_food__foods__desc">Vietnamese Yogurt mixed<br>
+          with ripe mango jam</p>
       </div>
       <div class="choosing_food__foods__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-04.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/4th_img.png" alt="">
+        <p class="choosing_food__foods__title">Mango Yogurt </p>
+        <p class="choosing_food__foods__desc">Vietnamese Yogurt mixed<br>
+          with ripe mango jam</p>
       </div>
       <div class="choosing_food__foods__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-05.jpg" alt="">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/5th_img.png" alt="">
+        <p class="choosing_food__foods__title">Mango Yogurt </p>
+        <p class="choosing_food__foods__desc">Vietnamese Yogurt mixed<br>
+          with ripe mango jam</p>
+      </div>
+      <!-- <div class="choosing_food__foods__item">
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/6th_img.png" alt="">
+        <p class="choosing_food__foods__title">Mango Yogurt </p>
+        <p class="choosing_food__foods__desc">Vietnamese Yogurt mixed<br>
+          with ripe mango jam</p>
       </div>
       <div class="choosing_food__foods__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-06.jpg" alt="">
-      </div>
-      <div class="choosing_food__foods__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/Salad with Names-07.jpg" alt="">
-      </div>
+        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/7th_img.png" alt="">
+        <p class="choosing_food__foods__title">Mango Yogurt </p>
+        <p class="choosing_food__foods__desc">Vietnamese Yogurt mixed<br>
+          with ripe mango jam</p>
+      </div> -->
     </div>
 
     <div class="sched">
@@ -690,7 +711,7 @@
     }
 
     function redirect() {
-      window.location = 'http://localhost:3000/step4.php';
+      window.location = 'http://wordpress.test/step4.php';
     }
   </script>
 </body>

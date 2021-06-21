@@ -613,6 +613,7 @@ select {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-width: 1200px;
 }
 
 .choose_plan .plan_1 {
@@ -880,6 +881,8 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  max-width: 1366px;
+  margin: 0 auto;
 }
 
 .choosing_food__foods__item {
