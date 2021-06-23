@@ -711,7 +711,7 @@
     }
 
     function redirect() {
-      window.location = 'http://wordpress.test/step4.php';
+      window.location = 'http://wordpress.test/step4';
     }
   </script>
 </body>

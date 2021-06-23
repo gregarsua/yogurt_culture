@@ -386,7 +386,7 @@
     })()
 
     function goToCheckChoices() {
-      window.location = 'http://localhost:3000/step5.php';
+      window.location = 'wordpress.test/step5';
     }
   </script>
 

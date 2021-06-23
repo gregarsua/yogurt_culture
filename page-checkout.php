@@ -19,7 +19,7 @@
 
     <div class="section_1">
         <a href="">
-            <img class="section_1__logo" src="/assets/img/logo.png" alt="" />
+            <img class="section_1__logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="" />
         </a>
 
         <ul class="section_1__list">
@@ -60,7 +60,7 @@
 
         <div class="content">
             <div class="qr_code">
-                <img class="qr_code__img" src="/assets/img/qr.png" alt="">
+                <img class="qr_code__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/qr.png" alt="">
                 <p class="qr_code__txt">+ 63 967 019 5897</p>
                 <p class="qr_code__acc">ACCOUNT NUMBER</p>
             </div>
@@ -104,7 +104,7 @@
 
                 <div class="start_plan">
                     <button class="start_plan__btn" id="myBtn">DOWNLOAD QR</button><br>
-                    <a href="http://localhost:3000/step5.php">
+                    <a href="wordpress.test/step5">
                         <p class="back">BACK</p>
                     </a>
                 </div>
@@ -352,7 +352,7 @@
         }
 
         function backToHome() {
-            window.location = 'index.html'
+            window.location = 'wordpress.test/page-start.php'
         }
     </script>
 

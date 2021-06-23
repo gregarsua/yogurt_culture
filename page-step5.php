@@ -415,7 +415,7 @@
     })()
 
     function goToCheckout() {
-      window.location = 'http://localhost:3000/page-checkout.php';
+      window.location = 'wordpress.test/checkout';
     }
   </script>
 </body>
