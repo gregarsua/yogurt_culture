@@ -10,6 +10,18 @@ hr {
   width: 67%;
 }
 
+.slick-next:before,
+.slick-prev:before {
+  color: #eae8e8 !important;
+  font-size: 50px !important;
+  background: none !important;
+}
+
+.slick-next,
+.slick-prev {
+  width: 3% !important;
+}
+
 input[type="text"] {
   border-radius: 57px;
   background: #f1f2f2;
@@ -68,14 +80,6 @@ select {
   @media only screen and (max-width: 481px) {
     width: 97%;
   }
-}
-
-.slick-prev {
-  display: none !important;
-}
-
-.slick-next {
-  display: none !important;
 }
 
 .promo_code {
@@ -741,6 +745,17 @@ select {
       font-family: "Montserrat", sans-serif;
       color: #707070;
       padding-top: 0.856em;
+    }
+
+    &__cart {
+      background: #0c55a0;
+      border-radius: 62px;
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 0.75rem;
+      border: none;
+      padding: 10px 30px;
+      margin: 1em 0;
     }
   }
 
@@ -1591,4 +1606,121 @@ button {
 
 a {
   text-decoration: none;
+}
+
+// SHOP CAROUSEL 2
+/* no circle */
+.flickity-button {
+  background: transparent;
+}
+.flickity-button:hover {
+  background: transparent;
+  color: black;
+}
+
+.flickity-prev-next-button {
+  width: 100px;
+  height: 100px;
+}
+.flickity-button-icon {
+  fill: white;
+}
+.flickity-button:disabled {
+  display: none;
+}
+
+.carousel {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: auto;
+  max-width: 680px;
+  height: 400px;
+  border-radius: 20%;
+}
+.carousel-cell {
+  margin-top: 35px;
+  margin-right: 35px;
+  margin-bottom: 35px;
+  float: right;
+  max-width: 201px;
+  width: 100%;
+  height: 335px;
+  border-radius: 15px;
+  counter-increment: carousel-cell;
+  transition: all 0.3s ease;
+  opacity: 0.3;
+  background: #b9b9b9;
+  filter: blur(6px);
+}
+.carousel-cell.is-selected {
+  filter: blur(0);
+  opacity: 1;
+  background: white;
+  transform: scale(1.1);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/* name */
+.carousel-cell .n {
+  font-size: 18px;
+  margin-top: 15px;
+  text-align: center;
+  color: black;
+  counter-increment: carousel-cell;
+}
+
+/* button */
+.carousel-cell .b {
+  cursor: pointer;
+  margin: auto;
+  width: 180px;
+  padding: 1px;
+  background: green;
+  border: 1px solid green;
+  border-radius: 15px;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+  counter-increment: carousel-cell;
+  transition: all 0.3s ease;
+}
+
+/* picture */
+.carousel-cell .p {
+  border-radius: 15px;
+  width: 201px;
+  height: 250px;
+  counter-increment: carousel-cell;
+}
+
+.carousel-cell .b:hover {
+  background: #00e509;
+  transform: scale(1.03);
+  font-size: 16px;
+}
+
+.carousel-cell .b:active {
+  background: white;
+  color: green;
+  transform: scale(0.9);
+  font-size: 16px;
+}
+
+.carousel-cell .b-selected {
+  cursor: pointer;
+  margin: auto;
+  width: 180px;
+  padding: 1px;
+  background: white;
+  border: 1px solid green;
+  border-radius: 15px;
+  font-size: 15px;
+  color: green;
+  text-align: center;
+  counter-increment: carousel-cell;
+  transition: all 0.3s ease;
+}
+
+// CAROUSEL PC
+.carousel-pc {
+  padding: 10em 0;
 }

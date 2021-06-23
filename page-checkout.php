@@ -136,7 +136,6 @@
         <p class="footer__txt">Terms and Privacy | Disclaimer </p>
         <p class="footer__txt2">© YOGURT CULTURE 2021</p>
     </footer>
-
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {

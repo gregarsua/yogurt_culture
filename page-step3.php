@@ -102,18 +102,6 @@
         <p class="choosing_food__foods__desc">Vietnamese Yogurt mixed<br>
           with ripe mango jam</p>
       </div>
-      <!-- <div class="choosing_food__foods__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/6th_img.png" alt="">
-        <p class="choosing_food__foods__title">Mango Yogurt </p>
-        <p class="choosing_food__foods__desc">Vietnamese Yogurt mixed<br>
-          with ripe mango jam</p>
-      </div>
-      <div class="choosing_food__foods__item">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/7th_img.png" alt="">
-        <p class="choosing_food__foods__title">Mango Yogurt </p>
-        <p class="choosing_food__foods__desc">Vietnamese Yogurt mixed<br>
-          with ripe mango jam</p>
-      </div> -->
     </div>
 
     <div class="sched">
