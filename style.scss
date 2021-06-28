@@ -1702,7 +1702,7 @@ a {
   background: url("../img/sect_bg.png");
   background-size: cover;
   background-position: center center;
-  padding: 8.5em 11em;
+  padding: 12em;
 
   @media only screen and (max-width: 425px) {
     padding: 2em;
@@ -1718,6 +1718,11 @@ a {
     color: #0c55a0;
     font-family: "Montserrat", sans-serif;
     font-weight: bold;
+
+    @media only screen and (max-width: 425px) {
+      font-size: 1.588rem;
+      line-height: 33px;
+    }
   }
 
   &__desc {
@@ -1726,6 +1731,13 @@ a {
     font-weight: 600;
     color: #0c55a0;
     padding: 1em 0;
+
+    @media only screen and (max-width: 425px) {
+      font-size: 1.588rem;
+      font-weight: bold;
+      padding: 0;
+      line-height: 33px;
+    }
   }
 
   &__choose {
@@ -1735,6 +1747,11 @@ a {
     color: #0c55a0;
     padding: 0 0 3em 0;
     line-height: 20px;
+
+    @media only screen and (max-width: 425px) {
+      font-size: 1.2rem;
+      padding: 2em 0;
+    }
   }
 
   &__btn {
