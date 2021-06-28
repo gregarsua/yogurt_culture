@@ -57,6 +57,76 @@
     </div>
     </div>
 
+
+    <!-- CAROUSEL SP -->
+    <div class="carousel-sp">
+
+        <!-- ITEM 1 -->
+        <div class="a-box">
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="inner-skew">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/1st_img.png">
+                    </div>
+                </div>
+            </div>
+            <div class="text-container">
+                <h3>Mango Yogurt</h3>
+                <div class="text-container__desc">
+                    Vietnamese Yogurt mixed<br>
+                    with ripe mango jam
+                </div>
+                <button class="text-container__btn">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="a-box">
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="inner-skew">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/1st_img.png">
+                    </div>
+                </div>
+            </div>
+            <div class="text-container">
+                <h3>Mango Yogurt</h3>
+                <div class="text-container__desc">
+                    Vietnamese Yogurt mixed<br>
+                    with ripe mango jam
+                </div>
+                <button class="text-container__btn">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="a-box">
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="inner-skew">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/1st_img.png">
+                    </div>
+                </div>
+            </div>
+            <div class="text-container">
+                <h3>Mango Yogurt</h3>
+                <div class="text-container__desc">
+                    Vietnamese Yogurt mixed<br>
+                    with ripe mango jam
+                </div>
+                <button class="text-container__btn">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+    </div>
+    <!-- END CAROUSEL SP -->
+
+
     <div class="yogurt">
         <p class="yogurt__title">Yogurt Everyday!</p>
         <p class="yogurt__desc">Subscribe for a weekly yogurt supply</p>
@@ -69,7 +139,6 @@
 
     <div class="order">
         <p class="order__title">Order our Yogurts</p>
-
         <div class="order__logos">
             <div class="foodpanda">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/foodpanda.png" alt="">
