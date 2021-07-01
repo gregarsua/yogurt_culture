@@ -87,7 +87,7 @@
             <div class="img-container">
                 <div class="img-inner">
                     <div class="inner-skew">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/1st_img.png">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/2nd_img.png">
                     </div>
                 </div>
             </div>
@@ -108,7 +108,29 @@
             <div class="img-container">
                 <div class="img-inner">
                     <div class="inner-skew">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/1st_img.png">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/3rd_img.png">
+                    </div>
+                </div>
+            </div>
+            <div class="text-container">
+                <h3>Mango Yogurt</h3>
+                <div class="text-container__desc">
+                    Vietnamese Yogurt mixed<br>
+                    with ripe mango jam
+                </div>
+                <button class="text-container__btn">
+                    ADD TO CART
+                </button>
+            </div>
+        </div>
+
+        <!-- ITEM 4 -->
+
+        <div class="a-box">
+            <div class="img-container">
+                <div class="img-inner">
+                    <div class="inner-skew">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/4th_img.png">
                     </div>
                 </div>
             </div>
@@ -190,6 +212,14 @@
                     }
                 }
             ]
+        });
+    </script>
+
+    <script>
+        $('.carousel-sp').slick({
+            centerMode: true,
+            arrows: false,
+            infinite: true,
         });
     </script>
 
