@@ -13,6 +13,30 @@
 </head>
 
 <body>
+    <header>
+        <div class="top_header">
+            <p>PROMOCODE: <span class="top_header__promo">YOGURTISOURCULTURE</span> 10% OFF ON ALL ITEMS</p>
+        </div>
+
+        <div class="top_main">
+            <div class="top_main__logo">
+                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
+            </div>
+            <div class="width_2"></div>
+            <div class="top_main__links">
+                <ul class="top_main__link">
+                    <li>PRODUCTS</li>
+                    <li>ABOUT US</li>
+                    <li style="color:#0C55A0">SHOP</li>
+                    <li>SUBSCRIPTION</li>
+                    <li>CONTACT</li>
+                </ul>
+            </div>
+            <div class="top_main__cart">
+                <img class="cart_img" src="<?php echo get_template_directory_uri(); ?>/assets/img/cart.png" alt="">
+            </div>
+        </div>
+    </header>
     <div class="carousel-pc">
         <div class="choosing_food">
             <div class="choosing_food__foods slider">
@@ -174,6 +198,48 @@
             See Nearby Distributors
         </button>
     </div>
+
+    <footer class="footer">
+        <div class="footer__items">
+            <div class="item-1">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer_logo.png" alt="">
+            </div>
+
+            <div class="item-2">
+                <p class="item-2__title">Subscribe to our newsletter</p>
+                <input class="item-2__email_input" type="email" placeholder="Email" style="width: 50%;"><br>
+                <button class="item-2__btn">Subscribe</button>
+            </div>
+
+            <div class="item-3">
+                <ul>
+                    <a href="<?php echo esc_url(home_url('/')); ?>">
+                        <li>Home</li>
+                    </a>
+                    <a href="<?php echo esc_url(home_url('Products')); ?>">
+                        <li>Products</li>
+                    </a>
+                    <a href="<?php echo esc_url(home_url('/')); ?>">
+                        <li>Be a Distributor</li>
+                    </a>
+                    <a href="<?php echo esc_url(home_url('Shop')); ?>">
+                        <li>Shop</li>
+                    </a>
+                    <a href="<?php echo esc_url(home_url('About Us')); ?>">
+                        <li>About Us</li>
+                    </a>
+
+                </ul>
+            </div>
+
+            <div class="item-4">
+                <p class="item-4__title">CONTACT US</p>
+                <p class="item-4__number">+63 032 262 5680</p>
+                <p class="item-4__email">info.yogurtculture.store</p>
+            </div>
+        </div>
+    </footer>
+
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
