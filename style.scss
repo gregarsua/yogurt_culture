@@ -246,6 +246,14 @@ select {
         font-weight: 500;
         color: #fff;
       }
+
+      &__social {
+        padding: 1em 0 0 0;
+
+        .inst_img {
+          padding: 0 0 0 0.7em;
+        }
+      }
     }
   }
 }

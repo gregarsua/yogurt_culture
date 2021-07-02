@@ -288,6 +288,14 @@ select {
   color: #fff;
 }
 
+.footer__items .item-4__social {
+  padding: 1em 0 0 0;
+}
+
+.footer__items .item-4__social .inst_img {
+  padding: 0 0 0 0.7em;
+}
+
 .section_1 {
   -webkit-box-shadow: 3px 5px 6px #ccc;
           box-shadow: 3px 5px 6px #ccc;

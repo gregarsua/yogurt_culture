@@ -236,6 +236,11 @@
                 <p class="item-4__title">CONTACT US</p>
                 <p class="item-4__number">+63 032 262 5680</p>
                 <p class="item-4__email">info.yogurtculture.store</p>
+
+                <div class="item-4__social">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/img/facebook.png" alt="">
+                    <img class="inst_img" src="<?php echo get_template_directory_uri(); ?>/assets/img/instagram.png" alt="">
+                </div>
             </div>
         </div>
     </footer>
