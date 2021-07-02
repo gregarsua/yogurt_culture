@@ -209,7 +209,7 @@
             <div class="item-1">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/img/footer_logo.png" alt="">
             </div>
-
+            <div class="width_2"></div>
             <div class="item-2">
                 <p class="item-2__title">Subscribe to our newsletter</p>
                 <input class="item-2__email_input" type="email" placeholder="Email" style="width: 50%;"><br>
