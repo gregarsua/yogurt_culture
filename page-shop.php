@@ -36,6 +36,11 @@
                 <img class="cart_img" src="<?php echo get_template_directory_uri(); ?>/assets/img/cart.png" alt="">
             </div>
         </div>
+
+        <!-- HEADER SP VIEW -->
+        <div class="top_main-sp">
+
+        </div>
     </header>
     <div class="carousel-pc">
         <div class="choosing_food">

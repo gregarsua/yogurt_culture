@@ -145,6 +145,12 @@ select {
   padding: 2em 0;
 }
 
+@media only screen and (max-width: 426px) {
+  .top_main {
+    display: none;
+  }
+}
+
 .top_main__logo {
   width: 13%;
 }
@@ -199,9 +205,21 @@ select {
   width: 25%;
 }
 
+@media only screen and (max-width: 426px) {
+  .footer__items .item-1 {
+    width: 70%;
+  }
+}
+
 .footer__items .item-2 {
   width: 30%;
   text-align: left;
+}
+
+@media only screen and (max-width: 426px) {
+  .footer__items .item-2 {
+    display: none;
+  }
 }
 
 .footer__items .item-2__title {
@@ -251,6 +269,12 @@ select {
   width: 20%;
 }
 
+@media only screen and (max-width: 426px) {
+  .footer__items .item-3 {
+    display: none;
+  }
+}
+
 .footer__items .item-3 li {
   color: #fff;
   text-align: left;
@@ -264,6 +288,12 @@ select {
   width: 25%;
   padding: 1em 0 0 0;
   text-align: left;
+}
+
+@media only screen and (max-width: 426px) {
+  .footer__items .item-4 {
+    width: 50%;
+  }
 }
 
 .footer__items .item-4__title {
@@ -2052,6 +2082,12 @@ select {
   padding: 3.5em 0;
 }
 
+@media only screen and (max-width: 426px) {
+  .footer {
+    margin: 0 auto;
+  }
+}
+
 .footer__txt {
   font-size: 0.75rem;
   color: #fff;
@@ -2176,7 +2212,7 @@ a {
   padding: 12em;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
   .yogurt {
     padding: 2em;
     text-align: center;
@@ -2276,7 +2312,7 @@ a {
   padding: 7em 0;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
   .order__logos {
     display: block;
   }
@@ -2286,7 +2322,7 @@ a {
   width: 30%;
 }
 
-@media only screen and (max-width: 425px) {
+@media only screen and (max-width: 426px) {
   .order__logos .foodpanda {
     width: 100%;
   }
@@ -2294,6 +2330,12 @@ a {
 
 .order__logos .grab {
   width: 30%;
+}
+
+@media only screen and (max-width: 426px) {
+  .order__logos .grab {
+    width: 100%;
+  }
 }
 
 .order__btn {
