@@ -1797,7 +1797,7 @@ a {
 .carousel-pc {
   padding: 5em 0 10em 0;
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 426px) {
     display: none;
   }
 }
@@ -1810,7 +1810,7 @@ a {
   padding: 5em 0;
   display: none !important;
 
-  @media only screen and (max-width: 425px) {
+  @media only screen and (max-width: 426px) {
     display: block !important;
   }
 }
