@@ -125,11 +125,11 @@
             </ul>
         </div>
     </nav>
-
+<!-- PARA diri ra kutob  PAGE-shop ni  -->
     <!--  -->
     <br>
     <br>
-    <!--  -->
+    <!--  normal pages -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent z-index-10">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav2" aria-controls="nav2" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon">
@@ -170,6 +170,7 @@
             </ul>
         </div>
     </nav>
+    <!--  normal pages -->
     <!-- ////////////////////////////// -->
 
     <div class="section_1">
