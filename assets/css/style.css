@@ -145,7 +145,7 @@ select {
   padding: 2em 0;
 }
 
-@media only screen and (max-width: 426px) {
+@media only screen and (max-width: 768px) {
   .top_main {
     display: none;
   }
@@ -162,6 +162,12 @@ select {
 .top_main__links {
   width: 57%;
   text-align: center;
+}
+
+@media only screen and (max-width: 1025px) {
+  .top_main__links {
+    width: 70%;
+  }
 }
 
 .top_main__link {
@@ -184,6 +190,16 @@ select {
 
 .top_main__cart {
   width: 10%;
+}
+
+.top_main-sp {
+  display: none;
+}
+
+@media only screen and (max-width: 769px) {
+  .top_main-sp {
+    display: block;
+  }
 }
 
 .footer {
@@ -358,7 +374,7 @@ select {
 
 @media only screen and (max-width: 481px) {
   .section_1__logo {
-    width: 40%;
+    width: 80%;
   }
 }
 
@@ -2212,6 +2228,12 @@ a {
   padding: 12em;
 }
 
+@media only screen and (max-width: 1025px) {
+  .yogurt {
+    padding: 4em;
+  }
+}
+
 @media only screen and (max-width: 426px) {
   .yogurt {
     padding: 2em;
@@ -2245,6 +2267,12 @@ a {
   padding: 1em 0;
 }
 
+@media only screen and (max-width: 1025px) {
+  .yogurt__desc {
+    padding: 0;
+  }
+}
+
 @media only screen and (max-width: 425px) {
   .yogurt__desc {
     font-size: 1.588rem;
@@ -2265,8 +2293,9 @@ a {
 
 @media only screen and (max-width: 425px) {
   .yogurt__choose {
-    font-size: 1.2rem;
+    font-size: 1rem;
     padding: 2em 0;
+    line-height: 20px;
   }
 }
 
@@ -2318,8 +2347,18 @@ a {
   }
 }
 
+@media only screen and (max-width: 1025px) {
+  .order__logos {
+    padding: 5em 0;
+  }
+}
+
 .order__logos .foodpanda {
   width: 30%;
+}
+
+.order__logos .foodpanda img {
+  width: 90%;
 }
 
 @media only screen and (max-width: 426px) {
@@ -2328,13 +2367,29 @@ a {
   }
 }
 
+@media only screen and (max-width: 769px) {
+  .order__logos .foodpanda {
+    width: 40%;
+  }
+}
+
 .order__logos .grab {
   width: 30%;
+}
+
+.order__logos .grab img {
+  width: 90%;
 }
 
 @media only screen and (max-width: 426px) {
   .order__logos .grab {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  .order__logos .grab {
+    width: 40%;
   }
 }
 
@@ -2373,5 +2428,73 @@ a {
 .a-box.slick-slide {
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
+}
+
+nav {
+  -webkit-box-shadow: 3px 5px 6px #ccc;
+          box-shadow: 3px 5px 6px #ccc;
+}
+
+.navbar-nav {
+  padding-left: 15px;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(12, 85, 160, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+
+.pl-px-36 {
+  padding-left: 36px;
+}
+
+.pl-px-16 {
+  padding-left: 16px;
+}
+
+.nav-title {
+  color: #0C55A0;
+  font-weight: 600;
+  font-size: 11px;
+  font-family: 'Montserrat';
+}
+
+.image {
+  height: 40px;
+  width: 40px;
+}
+
+.pt-px-35 {
+  padding-top: 35px;
+}
+
+.pb-px-36 {
+  padding-bottom: 36px;
+}
+
+.yc-nav {
+  background: #0C55A0;
+  margin-top: .5rem;
+  margin-bottom: -.5rem;
+}
+
+a.nav-link {
+  color: white !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.shop-icon {
+  padding: .25rem .75rem;
 }
 /*# sourceMappingURL=style.css.map */
