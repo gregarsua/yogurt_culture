@@ -2256,6 +2256,7 @@ a {
   .yogurt__title {
     font-size: 1.588rem;
     line-height: 33px;
+    margin: 0;
   }
 }
 
@@ -2294,7 +2295,7 @@ a {
 @media only screen and (max-width: 425px) {
   .yogurt__choose {
     font-size: 1rem;
-    padding: 2em 0;
+    padding: 1em 0;
     line-height: 20px;
   }
 }
@@ -2436,7 +2437,12 @@ nav {
 }
 
 .navbar-nav {
-  padding-left: 15px;
+  padding-left: 15px !important;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
 }
 
 .navbar-light .navbar-toggler {
