@@ -1,3 +1,8 @@
+a {
+  text-decoration: none !important;
+  color: #7a7a7a !important;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -156,7 +161,8 @@ select {
       font-size: 0.938rem;
       font-weight: 500;
       padding: 1em;
-      color: #707070;
+      color: #7a7a7a;
+      text-decoration: none;
     }
   }
 
@@ -1934,7 +1940,7 @@ a {
     color: #0c55a0;
     padding: 1em 0;
 
-    @media only screen and (max-width: 1025px){
+    @media only screen and (max-width: 1025px) {
       padding: 0;
     }
 
@@ -2075,7 +2081,6 @@ a {
   transform: scale(0.9);
 }
 
-
 nav {
   box-shadow: 3px 5px 6px #ccc;
 }
@@ -2084,43 +2089,36 @@ nav {
   padding-left: 15px !important;
 }
 
-.navbar-toggler:focus{
+.navbar-toggler:focus {
   box-shadow: none !important;
 }
-
 
 .navbar-light .navbar-toggler {
   border: none;
 }
 
-
 .navbar-toggler:focus {
   box-shadow: none;
 }
-
 
 .navbar-light .navbar-toggler-icon {
   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(12, 85, 160, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='3' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
 }
 
-
 .pl-px-36 {
   padding-left: 36px;
 }
-
 
 .pl-px-16 {
   padding-left: 16px;
 }
 
-
 .nav-title {
-  color: #0C55A0;
+  color: #0c55a0;
   font-weight: 600;
   font-size: 11px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
-
 
 .image {
   height: 40px;
@@ -2131,29 +2129,24 @@ nav {
   padding-top: 35px;
 }
 
-
 .pb-px-36 {
   padding-bottom: 36px;
 }
 
-
 .yc-nav {
-  background: #0C55A0;
-  margin-top: .5rem;
-  margin-bottom: -.5rem;
+  background: #0c55a0;
+  margin-top: 0.5rem;
+  margin-bottom: -0.5rem;
 }
-
 
 a.nav-link {
   color: white !important;
 }
 
-
 .center {
   text-align: center;
 }
 
-
-.shop-icon  {
-  padding: .25rem .75rem;
+.shop-icon {
+  padding: 0.25rem 0.75rem;
 }

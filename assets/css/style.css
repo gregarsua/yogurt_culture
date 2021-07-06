@@ -1,3 +1,8 @@
+a {
+  text-decoration: none !important;
+  color: #7a7a7a !important;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -185,7 +190,8 @@ select {
   font-size: 0.938rem;
   font-weight: 500;
   padding: 1em;
-  color: #707070;
+  color: #7a7a7a;
+  text-decoration: none;
 }
 
 .top_main__cart {
@@ -2467,10 +2473,10 @@ nav {
 }
 
 .nav-title {
-  color: #0C55A0;
+  color: #0c55a0;
   font-weight: 600;
   font-size: 11px;
-  font-family: 'Montserrat';
+  font-family: "Montserrat";
 }
 
 .image {
@@ -2487,9 +2493,9 @@ nav {
 }
 
 .yc-nav {
-  background: #0C55A0;
-  margin-top: .5rem;
-  margin-bottom: -.5rem;
+  background: #0c55a0;
+  margin-top: 0.5rem;
+  margin-bottom: -0.5rem;
 }
 
 a.nav-link {
@@ -2501,6 +2507,6 @@ a.nav-link {
 }
 
 .shop-icon {
-  padding: .25rem .75rem;
+  padding: 0.25rem 0.75rem;
 }
 /*# sourceMappingURL=style.css.map */

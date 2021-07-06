@@ -21,16 +21,29 @@
 
         <div class="top_main">
             <div class="top_main__logo">
-                <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
+                <a href="<?php echo esc_url(home_url('/')); ?>">
+                    <img class="logo" src="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png" alt="">
+                </a>
+
             </div>
             <div class="width_2"></div>
             <div class="top_main__links">
                 <ul class="top_main__link">
-                    <li>PRODUCTS</li>
-                    <li>ABOUT US</li>
-                    <li style="color:#0C55A0">SHOP</li>
-                    <li>SUBSCRIPTION</li>
-                    <li>CONTACT</li>
+                    <li>
+                        <a href="<?php echo get_permalink(get_page_by_path('Products')) ?>">PRODUCTS</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo get_permalink(get_page_by_path('About Us')) ?>">ABOUT US</a>
+                    </li>
+                    <li style="color:#0C55A0">
+                        <a href="<?php echo get_permalink(get_page_by_path('Shop')) ?>">SHOP</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo get_permalink(get_page_by_path('Subscription')) ?>">SUBSCRIPTION</a>
+                    </li>
+                    <li>
+                        <a href="<?php echo get_permalink(get_page_by_path('Contact Us')) ?>">CONTACT</a>
+                    </li>
                 </ul>
             </div>
             <div class="top_main__cart">
@@ -57,22 +70,22 @@
                 <div class="collapse navbar-collapse yc-nav" id="nav2">
                     <ul class="navbar-nav mr-auto pl-px-36 pt-px-35 pb-px-36">
                         <li class="nav-item text-white active">
-                            <a class="nav-link" href="#">Yogurt Culture</a>
+                            <a class="nav-link" href="<?php echo esc_url(home_url('/')); ?>">Yogurt Culture</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Products</a>
+                            <a class="nav-link" href="<?php echo esc_url(home_url('Products')); ?>">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">About Us</a>
+                            <a class="nav-link" href="<?php echo esc_url(home_url('About Us')); ?>">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Shop</a>
+                            <a class="nav-link" href="<?php echo esc_url(home_url('Shop')); ?>">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Subscribe</a>
+                            <a class="nav-link" href="<?php echo esc_url(home_url('Subscribe')); ?>">Subscribe</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="#">Contact Us</a>
+                            <a class="nav-link" href="<?php echo esc_url(home_url('Contact Us')); ?>">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -293,7 +306,7 @@
 
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-   
+
 
     <script type="text/javascript">
         $('.slider').slick({
