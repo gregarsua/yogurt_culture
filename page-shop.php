@@ -30,19 +30,19 @@
             <div class="top_main__links">
                 <ul class="top_main__link">
                     <li>
-                        <a href="<?php echo get_permalink(get_page_by_path('Products')) ?>">PRODUCTS</a>
+                        <a href="<?php echo get_permalink(get_page_by_path('PRODUCTS')) ?>">PRODUCTS</a>
                     </li>
                     <li>
-                        <a href="<?php echo get_permalink(get_page_by_path('About Us')) ?>">ABOUT US</a>
+                        <a href="<?php echo get_permalink(get_page_by_path('ABOUT US')) ?>">ABOUT US</a>
                     </li>
                     <li style="color:#0C55A0">
-                        <a href="<?php echo get_permalink(get_page_by_path('Shop')) ?>">SHOP</a>
+                        <a href="<?php echo get_permalink(get_page_by_path('SHOP')) ?>">SHOP</a>
                     </li>
                     <li>
-                        <a href="<?php echo get_permalink(get_page_by_path('Subscription')) ?>">SUBSCRIPTION</a>
+                        <a href="<?php echo get_permalink(get_page_by_path('SUBSCRIBE')) ?>">SUBSCRIPTION</a>
                     </li>
                     <li>
-                        <a href="<?php echo get_permalink(get_page_by_path('Contact Us')) ?>">CONTACT</a>
+                        <a href="<?php echo get_permalink(get_page_by_path('CONTACT US')) ?>">CONTACT</a>
                     </li>
                 </ul>
             </div>
@@ -73,19 +73,19 @@
                             <a class="nav-link" href="<?php echo esc_url(home_url('/')); ?>">Yogurt Culture</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo esc_url(home_url('Products')); ?>">Products</a>
+                            <a class="nav-link" href="<?php echo get_permalink(get_page_by_path('PRODUCTS')) ?>">Products</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo esc_url(home_url('About Us')); ?>">About Us</a>
+                            <a class="nav-link" href="<?php echo get_permalink(get_page_by_path('ABOUT US')) ?>">About Us</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo esc_url(home_url('Shop')); ?>">Shop</a>
+                            <a class="nav-link" href="<?php echo get_permalink(get_page_by_path('SHOP')) ?>">Shop</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="<?php echo esc_url(home_url('Subscribe')); ?>">Subscribe</a>
+                            <a class="nav-link" href="<?php echo get_permalink(get_page_by_path('SUBSCRIBE')) ?>">Subscribe</a>
                         </li>
                         <li class="nav-item ">
-                            <a class="nav-link" href="<?php echo esc_url(home_url('Contact Us')); ?>">Contact Us</a>
+                            <a class="nav-link" href="<?php echo get_permalink(get_page_by_path('CONTACT US')) ?>">Contact Us</a>
                         </li>
                     </ul>
                 </div>
