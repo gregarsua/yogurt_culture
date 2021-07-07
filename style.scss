@@ -1,8 +1,25 @@
-// a {
-//   text-decoration: none !important;
-//   color: #7a7a7a !important;
-// }
+p {
+  margin-bottom: 0 !important;
+}
+a {
+  text-decoration: none !important;
+  color: #7a7a7a !important;
+}
 
+dl,
+ol,
+ul {
+  margin: 0 !important;
+}
+
+ol,
+ul {
+  padding-left: 0 !important;
+}
+
+hr {
+  margin: 0 auto !important;
+}
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -41,7 +58,7 @@ input[type="text"] {
 
   @media only screen and (max-width: 768px) {
     padding: 10px;
-    margin: 0.5em;
+    margin: 0.5em 0;
   }
 
   @media only screen and (max-width: 481px) {
@@ -66,7 +83,7 @@ select {
   background-color: #f1f2f2;
   border: none;
   padding: 20px;
-  width: 57%;
+  width: 50%;
   margin: 1em 0;
   color: #b2b1b1;
   text-align: center;
@@ -83,7 +100,8 @@ select {
   }
 
   @media only screen and (max-width: 481px) {
-    width: 97%;
+    width: 90%;
+    padding: 10px;
   }
 }
 
@@ -309,6 +327,7 @@ select {
   }
 }
 //END FOOTER
+
 .section_1 {
   box-shadow: 3px 5px 6px #ccc;
   display: flex;
@@ -317,8 +336,8 @@ select {
   justify-content: center;
   padding: 1em 0;
 
-  @media only screen and (max-width: 481px) {
-    display: block;
+  @media only screen and (max-width: 991px) {
+    display: none;
   }
 
   &__logo {
@@ -528,6 +547,7 @@ select {
       @media only screen and (max-width: 481px) {
         width: 85%;
         padding: 20px;
+        margin: 0 auto;
       }
 
       &__label {
@@ -1077,6 +1097,7 @@ select {
           display: flex;
           align-items: center;
           margin: 0 auto;
+          padding-bottom: 1em;
 
           .day {
             width: 30%;
@@ -1352,7 +1373,7 @@ select {
       padding: 3em 0 5em 4em;
 
       @media only screen and (max-width: 481px) {
-        width: 70%;
+        width: 80%;
         padding: 3em 2em;
         margin: 0 auto;
       }
@@ -2160,4 +2181,12 @@ a.nav-link {
 
 .shop-icon {
   padding: 0.25rem 0.75rem;
+}
+
+.start-pc {
+  display: none;
+
+  @media only screen and(max-width:990px) {
+    display: block;
+  }
 }

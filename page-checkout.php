@@ -8,6 +8,7 @@
     <title>Yogurt Culture</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/style.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/reset.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body>
@@ -15,6 +16,43 @@
         <p class="promo_code__title">
             PROMOCODE: <span class="promo_code__culture">YOGURTISOURCULTURE</span>> 10% OFF ON ALL ITEMS
         </p>
+    </div>
+
+    <div class="start-pc">
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent z-index-10">
+            <!-- Diri lang usba para sa katong page-step 2,3,4 etc. -->
+            <div class="pl-px-36">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/step-5_colored.png" class="image" alt="" /><span class="pl-px-16 nav-title">PAYMENT</span>
+            </div>
+            <!--  -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">
+                    <i class="fa fa-navicon" style="color:#fff; font-size:28px;"></i>
+                </span>
+            </button>
+            <div class="collapse navbar-collapse yc-nav" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto pl-px-36 pt-px-35 pb-px-36">
+                    <li class="nav-item text-white active">
+                        <a class="nav-link" href="<?php echo esc_url(home_url('/')); ?>">Yogurt Culture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo get_permalink(get_page_by_path('PRODUCTS')) ?>">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo get_permalink(get_page_by_path('ABOUT US')) ?>">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo get_permalink(get_page_by_path('SHOP')) ?>">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="<?php echo get_permalink(get_page_by_path('SUBSCRIBE')) ?>">Subscribe</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link" href="<?php echo get_permalink(get_page_by_path('CONTACT US')) ?>">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
     </div>
 
     <div class="section_1">
@@ -136,6 +174,10 @@
         <p class="footer__txt">Terms and Privacy | Disclaimer </p>
         <p class="footer__txt2">© YOGURT CULTURE 2021</p>
     </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
     <script type="text/javascript">
         (function() {

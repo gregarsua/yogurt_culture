@@ -1,3 +1,27 @@
+p {
+  margin-bottom: 0 !important;
+}
+
+a {
+  text-decoration: none !important;
+  color: #7a7a7a !important;
+}
+
+dl,
+ol,
+ul {
+  margin: 0 !important;
+}
+
+ol,
+ul {
+  padding-left: 0 !important;
+}
+
+hr {
+  margin: 0 auto !important;
+}
+
 * {
   font-family: "Montserrat", sans-serif;
 }
@@ -40,7 +64,7 @@ input[type="text"] {
 @media only screen and (max-width: 768px) {
   input[type="text"] {
     padding: 10px;
-    margin: 0.5em;
+    margin: 0.5em 0;
   }
 }
 
@@ -69,7 +93,7 @@ select {
   background-color: #f1f2f2;
   border: none;
   padding: 20px;
-  width: 57%;
+  width: 50%;
   margin: 1em 0;
   color: #b2b1b1;
   text-align: center;
@@ -92,7 +116,8 @@ select {
 
 @media only screen and (max-width: 481px) {
   select {
-    width: 97%;
+    width: 90%;
+    padding: 10px;
   }
 }
 
@@ -371,9 +396,9 @@ select {
   padding: 1em 0;
 }
 
-@media only screen and (max-width: 481px) {
+@media only screen and (max-width: 991px) {
   .section_1 {
-    display: block;
+    display: none;
   }
 }
 
@@ -668,6 +693,7 @@ select {
   .section_2__col__col-2 {
     width: 85%;
     padding: 20px;
+    margin: 0 auto;
   }
 }
 
@@ -1295,6 +1321,7 @@ select {
       -ms-flex-align: center;
           align-items: center;
   margin: 0 auto;
+  padding-bottom: 1em;
 }
 
 .choosing_food .sched__plan-sched .plan_week .date-2 .day {
@@ -1597,7 +1624,7 @@ select {
 
 @media only screen and (max-width: 481px) {
   .check_food .plan_sched__week-chosen {
-    width: 70%;
+    width: 80%;
     padding: 3em 2em;
     margin: 0 auto;
   }
@@ -2517,5 +2544,15 @@ a.nav-link {
 
 .shop-icon {
   padding: 0.25rem 0.75rem;
+}
+
+.start-pc {
+  display: none;
+}
+
+@media only screen and (max-width: 990px) {
+  .start-pc {
+    display: block;
+  }
 }
 /*# sourceMappingURL=style.css.map */
